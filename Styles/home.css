@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/*
+#E7A657
+#DC9B4D
+#91582E
+#553418
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/*NAVBARNAVBARNAVBARNAVBARNAVBARNAVBARNAVBARNAVBARNAVBARNAVBAR*/
+.navBar {
+    position: relative;
+    width: 100vw;
+    height: 18vh;
+    background-color: #553418;
+    font-size: 2em;
+}
+
+
+.navBar .DBFLogo{
+    position: absolute;
+    color: #f9c175;
+    margin-top: 2.5vh;
+    margin-left: 2vw;
+    float: left;
+    text-align: center;
+}
+
+.navBar .pane {
+    float: right;
+    text-align: center;
+    height: 100%;
+    width: 7vw;
+    font-size: 1.5rem;
+    background-color: #553418;
+    cursor: pointer;
+    padding-top: 9vh;
+    font-weight: 600;
+    color: #f1c48b;
+}
+
+#navBarPadding {
+    background-color: #553418;
+    width: 2.5vw;
+    cursor: default;
+}
+
+.navBar .pane:hover {
+    background-color: #DC9B4D;
+}
+
+.navBar .pane.active {
+    background-color: #DC9B4D;
+}
+
+/*info*/
+
+.infoPane {
+    position: relative;
+    background-color: #DC9B4D;
+    width: 100vw;
+    height: 40vh;
+    justify-content: center;
+}
+
+.infoPane .infoLogo {
+    position: absolute;
+    left: 8%;
+    height: 100%;
+}
+
+.infoPane .info {
+    position: absolute;
+    color: #553418;
+    left: 40%;
+    width: 35vw;
+    float: right;
+    margin-top: 6vh;
+    margin-bottom: 8vh;
+    font-weight: 600;
+}
+
+/* DIV: LICENSE and DONATE*/
+
+
+
+
+/* Not yet for the items*/
+/* ITEMSITEMSITEMSITEMSITEMSITEMSITEMSITEMSITEMSITEMSITEMS */
+.list {
+    position: relative;
+    display: none;
+    height: 50%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+#itemList {
+    display: none;
+}
+
+.subject {
+    position: relative;
+    background-color: #91582d;
+    color: #f9c175;
+    text-decoration: none;
+    font-size: 0.75rem;
+    width: 15vw;
+    height: 30vh;
+    margin: 1.25% 0 0 1.5%;
+    cursor: pointer;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.subject > img {
+    width: 90%;
+}
+
+
+/*
+<div class="NavBar">
+    <a class="DBFLogo"href="#">DBF</a>
+    <a href="about">about.</a>
+    <a href="donate">donate.</a>
+    <a href="license">license.</a>
+    <a href="faq">faq.</a>
+</div> */
