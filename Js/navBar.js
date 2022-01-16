@@ -26,9 +26,12 @@ function Activate(panel) {
     panel.classList.add("active");
     console.log("Activate panel");
     if( panel.innerHTML == "about.") {
-        info.innerHTML = "Đây là section nội dung của about";
+        //info.innerHTML = "Đây là section nội dung của about";
+        info.innerHTML = "www.google.com";
+        
     }else if( panel.innerHTML == "donate.") {
         info.innerHTML = "Đây là section nội dung của donate. Sau này sẽ add thêm 1 chiếc button(hoặc link) xinh xắn để dẫn người dùng qua donating page";
+        
     }else if( panel.innerHTML == "license.") {
         info.innerHTML = "Đây là section nội dung của license. Cái này anh chưa biết gì nên chưa có idea gì hết nhe =)))";
     }else if( panel.innerHTML == "faq.") {
