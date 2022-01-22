@@ -10,150 +10,113 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito';
 }
 
-body {
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Nunito', sans-serif;
+:root {
+    --navBar-Height: 80px;
+    --color1: #E7A657;
+    --color2: #DC9B4D;
+    --color3: #91582E;
+    --color4: #553418;
 }
 
-
-/*NAVBARNAVBARNAVBARNAVBARNAVBARNAVBARNAVBARNAVBARNAVBARNAVBAR*/
-.navBar {
-    position: relative;
+#header {
+    position: fixed;
+    background-color: rgb(148, 173, 240);
     width: 100vw;
-    height: 18vh;
-    background-color: #553418;
-    font-size: 2em;
+    height: var(--navBar-Height);
+    z-index: 50;
+    top: 0;
 }
 
-
-.navBar .DBFLogo{
+#header button {
     position: absolute;
-    color: #f9c175;
-    margin-top: 2.5vh;
-    margin-left: 2vw;
-    float: left;
-    text-align: center;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.navBar .pane {
-    float: right;
-    text-align: center;
-    height: 100%;
-    width: 7vw;
-    font-size: 1.5rem;
-    background-color: #553418;
-    cursor: pointer;
-    padding-top: 9vh;
-    font-weight: 600;
-    color: #f1c48b;
-}
-
-#navBarPadding {
-    background-color: #553418;
-    width: 2.5vw;
-    cursor: default;
-}
-
-.navBar .pane:hover {
-    background-color: #DC9B4D;
-}
-
-.navBar .pane.active {
-    background-color: #DC9B4D;
-}
-
-/*info*/
-
-.infoPane {
-    position: relative;
-    background-color: #DC9B4D;
-    width: 100vw;
-    height: 40vh;
-    justify-content: center;
-}
-
-.infoPane .infoLogo {
+#header img {
     position: absolute;
-    left: 8%;
-    height: 100%;
+    height: 125px;
+    left: 45%;
+    top: 70%;
+    transform: translateY(-50%);
 }
 
-.infoPane .info {
+#header #mainNav {
     position: absolute;
-    color: #553418;
-    left: 40%;
-    width: 35vw;
-    float: right;
-    margin-top: 6vh;
-    margin-bottom: 8vh;
-    font-weight: 600;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
 }
 
-/* DIV: LICENSE and DONATE*/
-
-
-
-
-/* Not yet for the items*/
-/* ITEMSITEMSITEMSITEMSITEMSITEMSITEMSITEMSITEMSITEMSITEMS */
-.list {
+#header #mainNav a{
     position: relative;
-    display: none;
-    height: 50%;
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-}
-
-#itemList {
-    display: none;
-}
-
-.subject {
-    position: relative;
-    background-color: #91582d;
-    color: #f9c175;
+    font-size: 16px;
     text-decoration: none;
-    font-size: 0.75rem;
-    width: 15vw;
-    height: 30vh;
-    margin: 1.25% 0 0 1.5%;
+    color: var(--color4);
+    margin-right: 12px;
+    font-weight: 600;
+}
+
+#header #mainNav a:not(:first-child)::before{
+    position: absolute;
+    content: '|';
+    top: -4px;
+    left: -10px;
+    font-size: 20px;
+    font-weight: 500;
+    /* width: 1.5px;
+    height: 20px;
+    background-color: var(--color3); */
+}
+
+
+
+.Btn {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    background-color: var(--color4);
+    color: #fff;
     cursor: pointer;
-    z-index: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
 }
 
-.subject > img {
-    width: 90%;
+
+
+#main {
+    margin-top: calc(var(--navBar-Height));
+    padding: 36px 0;
+    background-color: beige;
 }
 
-/*
-WIX: Interactive
-https://manage.wix.com/wix/api/premiumStart?siteGuid=55f7494e-9969-43c4-8398-d176547d77a5&referralAdditionalInfo=bizMgrSidebar
+.Section {
+    background-color: rgb(223, 219, 215);
+    margin: 24px 0;
+    padding: 24px;
+}
 
-HOSTGATOR: hót rẻ
-https://www.hostgator.com/web-hosting/?utm_source=bing&utm_medium=brandsearch&msclkid=3c240cf2f4d4155bb7256d4f6ac86c28
-domain: 13/yr
+.largeCell-Container {
+    display: inline-block;
+    background-color: bisque;
+    width: 40vw;
+}
 
-HOSTINGER:host rẻ
-https://www.hostinger.com/pricing
-domain ~ 10$ a year
 
-BLUEHOST: Rẻ nhất, free domain cho năm đầu
-https://www.bluehost.com/special/wordpress?utm_source=bing&utm_medium=brandsearch&&msclkid=a32ae38e3a131b663e4d8233c1f5e66a&gclid=CO3r8-rS7fQCFUdmjgodWsIN4w&gclsrc=ds&utm_campaign=affiliate-link_searchbrandpromo_PPC#get-started-with-bluehost
 
-SQUARESPACE:
-Domain: 20/yr
-*/
+.Slogan-Container {
+    display: inline-block;
+    width: 50vw;
+    margin-left: 36px;
+    background-color: rgb(43, 151, 151);
+}
 
+#footer {
+    position: relative;
+    background-color: black;
+}
