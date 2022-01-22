@@ -14,7 +14,7 @@
 }
 
 :root {
-    --navBar-Height: 80px;
+    --navBar-Height: 100px;
     --color1: #E7A657;
     --color2: #DC9B4D;
     --color3: #91582E;
@@ -40,8 +40,8 @@
 #header img {
     position: absolute;
     height: 125px;
-    left: 45%;
-    top: 70%;
+    left: 42.5%;
+    top: 50%;
     transform: translateY(-50%);
 }
 
@@ -81,7 +81,7 @@
     height: 40px;
     border: none;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 16px;
     background-color: var(--color4);
     color: #fff;
     cursor: pointer;
@@ -91,30 +91,112 @@
 
 #main {
     margin-top: calc(var(--navBar-Height));
-    padding: 36px 0;
+    padding: 12px 0;
     background-color: beige;
 }
 
 .Section {
     background-color: rgb(223, 219, 215);
     margin: 24px 0;
-    padding: 24px;
+    padding: 8px 32px;
 }
 
 .largeCell-Container {
     display: inline-block;
-    background-color: bisque;
+    /* background-color: bisque; */
     width: 40vw;
+    padding: 8px 0;
 }
 
+.two {
+    display: none;
+}
 
+.largeCell {
+    position: relative;
+    margin: auto;
+    width: 60%;
+    height: 420px;
+    background-color: #ffffff;
+    border-radius: 36px;
+    overflow: hidden;
+}
+
+.largeCell .cellHeader {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-color: #553418;
+}
+
+.largeCell .cellHeader img {
+    position: absolute;
+    width: 50%;
+    margin: auto;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.largeCell .cellContent {
+    display: block;
+    padding: 8px 16px;
+    height: 150px;
+}
+
+.largeCell .cellContent h3 {
+    margin-bottom: 4px;
+}
+
+.largeCell .cellContent p {
+    font-size: 14px;
+}
+
+.largeCell .cellFooter {
+    position: relative;
+    display: block;
+    height: 75px;
+    /* background-color: rgb(49, 175, 87); */
+}
+
+.largeCell .cellFooter .btnContainer {
+    position: absolute;
+    /* background-color: rgb(66, 102, 102); */
+    width: 224px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.largeCell .cellFooter .btnContainer .Btn{
+    margin: 0 4px;
+}
 
 .Slogan-Container {
     display: inline-block;
     width: 50vw;
+    height: 75vh;
     margin-left: 36px;
-    background-color: rgb(43, 151, 151);
+    vertical-align: top;
+    /* background-color: rgb(43, 151, 151); */
+    padding: 24px;
 }
+
+.Slogan-Container .SSlogan {
+    color: var(--color2);
+}
+
+.Slogan-Container .LSlogan {
+    color: var(--color4);
+    font-size: 56px;
+}
+
+.Slogan-Container .description {
+    margin-top: 16px;
+    color: rgb(145, 145, 145);
+    font-size: 14px;
+}
+
 
 #footer {
     position: relative;
