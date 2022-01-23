@@ -14,7 +14,7 @@
 }
 
 :root {
-    --navBar-Height: 100px;
+    --navBar-Height: 75px;
     --color1: #E7A657;
     --color2: #DC9B4D;
     --color3: #91582E;
@@ -23,7 +23,7 @@
 
 #header {
     position: fixed;
-    background-color: rgb(148, 173, 240);
+    background-color: #fff;
     width: 100vw;
     height: var(--navBar-Height);
     z-index: 50;
@@ -35,14 +35,29 @@
     left: 5%;
     top: 50%;
     transform: translateY(-50%);
+    width: 120px;
+    height: 48px;
+    border-radius: 60px;
+    font-size: 22px;
+    font-weight: 600;
 }
 
-#header img {
+#header .imgContainer {
+    position: relative;
+    margin-left: 520px;
+    background-color: #fff;
+    height: 125px;
+    width: 125px;
+    border-radius: 125px;
+}
+
+#header .imgContainer img {
     position: absolute;
     height: 125px;
-    left: 42.5%;
+    left: 50%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateX(-47.5%) translateY(-50%);
+    border-radius: 125px;
 }
 
 #header #mainNav {
@@ -54,11 +69,17 @@
 
 #header #mainNav a{
     position: relative;
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
     color: var(--color4);
     margin-right: 12px;
     font-weight: 600;
+    transition: ease-in-out 350ms;
+}
+
+#header #mainNav a:hover{
+    margin: 0px 16px 0px 4px;
+    color: var(--color1);
 }
 
 #header #mainNav a:not(:first-child)::before{
@@ -66,11 +87,14 @@
     content: '|';
     top: -4px;
     left: -10px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
-    /* width: 1.5px;
-    height: 20px;
-    background-color: var(--color3); */
+    transition: ease-in-out 350ms;
+}
+
+#header #mainNav a:not(:first-child):hover:before{
+    color: var(--color4);
+    left: -12px;
 }
 
 
@@ -79,15 +103,41 @@
     position: relative;
     width: 100px;
     height: 40px;
-    border: none;
+    border: 2px solid var(--color4);
     border-radius: 50px;
     font-size: 16px;
-    background-color: var(--color4);
-    color: #fff;
+    font-weight: 600;
+    color: var(--color4);
+    background-color: #fff;
     cursor: pointer;
+    overflow: hidden;
+    z-index: 10;
+    transition: ease-in 500ms;
 }
 
+.Btn::before {
+    position: absolute;
+    content: '';
+    background-color: var(--color4);
+    width: 0px;
+    height: 0px;
+    border-radius: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    transition: ease-in-out 500ms;
+}
 
+.Btn:hover {
+    color: #fff;
+    /* background-color: var(--color4); */
+}
+
+.Btn:hover::before {
+    width: 120px;
+    height: 120px;
+}
 
 #main {
     margin-top: calc(var(--navBar-Height));
@@ -96,8 +146,8 @@
 }
 
 .Section {
-    background-color: rgb(223, 219, 215);
-    margin: 24px 0;
+    /* background-color: rgb(50, 103, 110); */
+    margin: 60px 0;
     padding: 8px 32px;
 }
 
@@ -117,9 +167,10 @@
     margin: auto;
     width: 60%;
     height: 420px;
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 36px;
     overflow: hidden;
+    box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .largeCell .cellHeader {
@@ -163,20 +214,22 @@
 .largeCell .cellFooter .btnContainer {
     position: absolute;
     /* background-color: rgb(66, 102, 102); */
-    width: 224px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.largeCell .cellFooter .btnContainer .Btn{
-    margin: 0 4px;
+.largeCell .cellFooter .btnContainer :nth-child():not(:first-child){
+    margin-left: 24px
 }
 
 .Slogan-Container {
     display: inline-block;
-    width: 50vw;
+    width: 40vw;
     height: 75vh;
-    margin-left: 36px;
+    margin-left: 40px;
     vertical-align: top;
     /* background-color: rgb(43, 151, 151); */
     padding: 24px;
@@ -188,13 +241,74 @@
 
 .Slogan-Container .LSlogan {
     color: var(--color4);
-    font-size: 56px;
+    font-size: 36px;
 }
 
 .Slogan-Container .description {
     margin-top: 16px;
-    color: rgb(145, 145, 145);
+    color: rgb(110, 110, 110);
     font-size: 14px;
+}
+
+/* COMMON STYLES */
+
+.main.Section .Slogan-Container .LSlogan {
+    font-size: 52px;
+}
+
+/* FINISH MAIN SECTION */
+/* NOW ABOUT US SECTION */
+.AbtUs .Container {
+    position: relative;
+    display: inline-block;
+    width: 50vw;
+    height: 100%;
+    /* background-color: rgb(112, 230, 101); */
+    cursor: pointer;
+
+}
+
+.AbtUs .Container .imgContainer {
+    position: relative;
+    /* background-color: rgb(117, 160, 197); */
+    width: 50vw;
+    height: 400px;
+}
+
+.AbtUs.Container .imgContainer img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+}
+
+.AbtContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    padding: 16px 24px;
+    border-radius: 16px;
+    background: linear-gradient(
+        to bottom, 
+        rgba(255, 235, 239, 0.4), 40%,
+        rgb(252, 243, 245));
+    color: #553418;
+    opacity: 0;
+    transition: ease-in-out 750ms;
+}
+
+.AbtUs .Container:hover .AbtContainer {
+    top: 0%;
+    opacity: 1;
+}
+
+.AbtContainer h4 {
+    margin-bottom: 12px;
+}
+
+.AbtContainer p {
+    margin-top: 4px;
 }
 
 
