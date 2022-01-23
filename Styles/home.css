@@ -18,6 +18,10 @@
     --color2: #DC9B4D;
     --color3: #91582E;
     --color4: #553418;
+
+    --memList-color: rgb(255, 233, 206);
+
+    --mainBG-color: rgb(245, 245, 227);
 }
 
 #header {
@@ -145,14 +149,14 @@
 #main {
     margin-top: calc(var(--navBar-Height));
     padding: 40px 0;
-    background-color: beige;
+    background-color: var(--mainBG-color);
 }
 
 .Section {
-    background-color: rgb(216, 200, 172);
+    position: relative;
+    background-color: var(--mainBG-color);
     margin: 100px 0;
     padding: 56px 32px 12px 32px;
-    position: relative;;
 }
 
 .Section > h1 {
@@ -162,6 +166,7 @@
     top: -60px;
     left: 47.55%;
     transform: translateX(-52.5%);
+    color: var(--color4);
 }
 
 .largeCell-Container {
@@ -272,7 +277,11 @@
 /* FINISH MAIN SECTION */
 /* NOW ABOUT US SECTION */
 .AbtUs.Section {
-    height: 540px;
+    
+}
+
+.PodC.Section {
+   height: 500px; 
 }
 
 .AbtUs .Container {
@@ -302,7 +311,7 @@
 .AbtContainer {
     position: absolute;
     width: 100%;
-    height: 85%;
+    height: 100%;
     top: 50%;
     padding: 16px 24px;
     border-radius: 16px;
@@ -338,32 +347,127 @@
 }
 
 #CoreTeam {
-    position: absolute;
-    background-color: chocolate;
-    bottom: 0;
+    position: relative;
+    /* background-color: rgb(110, 159, 252); */
+    /* rgb(253, 226, 207) */
+    height: 50px;
+    width: 100vw;
+    /* height: 800px; activated */
+    margin: -100px 0 0 -36px;
+    transition: ease-in-out 750ms;
 }
 
-#CoreTeam i {
+#CoreTeam.active {
+    height: 800px; 
+    /* activated */
+}
 
+#CoreTeam #dropdownIconContainer {
+    position: relative;
+    background-color: var(--mainBG-color);
+    height: 60px;
+    cursor: pointer;
+    transition: ease-in-out 500ms;
+    margin: -0px 0 0 -36px;
+}
+
+#CoreTeam #dropdownIconContainer i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 40px;
+    transition: ease-in-out 250ms;
+}
+
+#CoreTeam #dropdownIconContainer:hover {
+    background-color: rgb(255, 215, 180);
+}
+
+#CoreTeam #dropdownIconContainer:hover i {
+    color: var(--color4);
+    font-size: 56px;
+}
+
+#CoreTeam #dropdownIconContainer:active {
+    color: var(--color1);
+    background-color: rgb(252, 185, 127);
+    transition: 10ms;
+}
+
+#CoreTeam #dropdownIconContainer.active {
+    background-color: rgb(252, 185, 127);
+}
+
+
+#CoreTeam .hider {
+    position: absolute;
+    height: 100px;
+    background-color: var(--mainBG-color);
+    width: 100vw;
+}
+
+#CoreTeam .hider.active {
+    background-color: var(--memList-color);
+}
+
+
+#CoreTeam .coreTeamList {
+    position: relative;
+    padding: 0 24px;
+    margin: auto;
+    display: none;
+    transition: ease-in-out 750ms;
+    background-color: var(--memList-color);
+}
+
+#CoreTeam .coreTeamList.active {
+    display: block;
+}
+
+#CoreTeam .coreTeamList .first-row,
+#CoreTeam .coreTeamList .second-row {
+    /* background-color: rgb(255, 203, 136); */
+    /* display: none; */
+    height: 360px;
+    padding: 36px 0px 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 #CoreTeam .coreTeamList .smolCell {
+    min-width: 15vw;
+    height: 300px;
+    background-color: #c48050;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+#CoreTeam .coreTeamList .smolCell .cellHeader {
+    position: relative;
+    height: 80%;
+    background-color: #c48050;
 
 }
 
-#CoreTeam .coreTeamList .smolCell .cellHeader{
-
+#CoreTeam .coreTeamList .smolCell .cellHeader img {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
-#CoreTeam .coreTeamList .smolCell .cellContent h3 {
 
-}
-
-#CoreTeam .coreTeamList .smolCell .cellContent p {
-
+#CoreTeam .coreTeamList .smolCell .cellContent {
+    text-align: center;
+    color: var(--color4);
 }
 
 #CoreTeam .coreTeamList .smolCell .quoteModal {
-
+    display: none;
+    position: absolute;
 }
 
 #CoreTeam .coreTeamList .smolCell .quoteModal p.quote {
