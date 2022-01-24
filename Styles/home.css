@@ -19,6 +19,8 @@
     --color3: #91582E;
     --color4: #553418;
 
+    --idk1: rgb(252, 232, 167);
+
     --memList-color: rgb(255, 233, 206);
 
     --mainBG-color: rgb(245, 245, 227);
@@ -68,6 +70,10 @@
     border-radius: 125px;
 }
 
+#header .ti-menu {
+    display: none;
+}
+
 #header #mainNav {
     position: absolute;
     top: 50%;
@@ -111,7 +117,7 @@
     width: 140px;
     height: 54px;
     border: 2px solid var(--color4);
-    border-radius: 50px;
+    border-radius: 54px;
     font-size: 20px;
     font-weight: 600;
     color: var(--color4);
@@ -145,6 +151,11 @@
     width: 140px;
     height: 140px;
 }
+
+
+/* MAIN BODY SECTION
+MAIN BODY SECTION
+MAIN BODY SECTION */
 
 #main {
     margin-top: calc(var(--navBar-Height));

@@ -1,0 +1,263 @@
+@media screen and (max-width: 420px) {
+
+    #header {
+        
+    }
+
+    #header .imgContainer {
+        position: absolute;
+        z-index: 50;
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%)  translateY(-50%);
+        margin-left: 0px;
+        height: 100px;
+        width: 100px;
+    }
+
+    #header .imgContainer img {
+        width: 120px;
+        height: 124px;
+    }
+
+    #mainNav {
+        top: 248px !important;
+        flex-direction: column;
+        left: -24px;
+        display: none;
+    }
+
+    #mainNav.active {display: flex}
+
+    #mainNav a,
+    #header #mainNav a {
+        margin: 0px 20px -1px 0px;
+        padding: 12px 16px 12px 48px;
+        background-color: var(--idk1);
+        font-size: 24px;
+        width: calc(100vw + 32px);
+    }
+
+    #mainNav a:before{
+        position: absolute;
+        content: '|';
+        top: -4px;
+        left: 20px !important;
+        padding: 12px 0;
+        margin-left: 12px;
+    }
+
+    #mainNav a:hover:before{
+        color: var(--color1) !important;
+    }
+    
+    #header #dropDownToggle.ti-menu {
+        position: absolute;
+        display: block;
+        color: var(--color4);
+        top: 50%;
+        right: 24px;
+        transform: translateY(-56%);
+        font-size: 40px;
+    }
+    
+    #header button {
+        display: none;
+    }
+
+
+    /* COMMON STYLES
+    COMMON STYLES
+    COMMON STYLES
+    COMMON STYLES
+    COMMON STYLES
+    COMMON STYLES
+     */
+
+    .Section {
+        margin: 48px 0;
+        padding: 24px 4px;
+    }
+    
+    .Section > h1 {
+        font-size: 48px;
+    }
+
+
+
+    .Slogan-Container {
+        width: calc(100vw - 8px) !important;
+        margin-left: 0px !important;
+        padding: 12px;
+        padding-bottom: 36px;
+        height: fit-content;
+    }
+
+    .Slogan-Container .SSlogan {
+        color: var(--color2);
+    }
+    
+    .Slogan-Container .LSlogan {
+        color: var(--color4);
+        font-size: 48px;
+        text-align: center; 
+    }
+    
+    .Slogan-Container .description {
+        margin-top: 16px;
+        color: rgb(99, 94, 90);
+        font-size: 20px;
+        padding: 0 16px;
+    }
+
+
+
+    .largeCell-Container {
+        display: inline-block;
+        /* background-color: bisque; */
+        width: 100vw;
+        margin-left: -4px;
+        /* background-color: blue; */
+    }
+    
+    .largeCell {
+        position: relative;
+        margin: auto;
+        width: 85%;
+        height: 480px;
+        background-color: #fff;
+        border-radius: 36px;
+        overflow: hidden;
+        box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+
+
+    .Btn {
+        position: relative;
+        width: 120px;
+        height: 52px;
+        font-size: 16px;
+    }
+
+    .Btn:hover::before {
+        width: 124px;
+        height: 124px;
+    }
+
+    /* COMMON STYLES END
+    COMMON STYLES END
+    COMMON STYLES END
+    COMMON STYLES END
+    COMMON STYLES END
+    COMMON STYLES END
+     */
+
+    /* A100PAGEs SECTION
+    A100PAGEs SECTION
+    A100PAGEs SECTION */
+
+    .main.Section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main.Section .Slogan-Container .LSlogan {
+        font-size: 100px;
+        /* background-color: brown; */
+        line-height: 92px;
+        margin: 24px 0 36px 0;
+        text-align: left;
+    }
+
+    /* AbtUs SECTION
+    AbtUs SECTION
+    AbtUs SECTION */
+    
+    .AbtUs.Container {
+        position: relative;
+        display: block;
+        margin: 0 0 680px -4px;
+        width: 100vw;
+        height: 200px;
+        /* background-color: rgb(39, 255, 20); */
+        cursor: pointer;
+    }
+
+    .AbtUs.Container .imgContainer {
+        height: 100%;
+        width: 100vw;
+    }
+
+    .AbtUs.Container .imgContainer img {
+        width: 680px;
+    }
+
+    .AbtUs.Container .TextContainer {
+        top: 0;
+        opacity: 1;
+        height: 680px;
+        padding: 12px 24px;
+
+        background: linear-gradient(
+        to bottom, 
+        rgba(255, 245, 235, 0.6), 20%,
+        rgb(252, 247, 243, 0.8), 80%, rgba(255, 245, 235, 0.6));
+
+        color: #553418;
+    }
+
+    .AbtUs.Container .TextContainer:hover {
+        opacity: 0.6;
+    }
+
+    .TextContainer h3 {
+        margin: 0;
+        transition: ease-in-out 750ms;
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    
+    .TextContainer p {
+        margin: 0;
+        transition: ease-in-out 750ms;
+        font-size: 20px;
+        margin-top: 8px;
+    }
+
+    /* AbtUs SECTION BUT THIS IS ABOUT CORETEAM
+    AbtUs SECTION BUT THIS IS ABOUT CORETEAM
+    AbtUs SECTION BUT THIS IS ABOUT CORETEAM*/
+
+    #CoreTeam {
+        position: relative;
+        /* background-color: rgb(110, 159, 252); */
+        /* rgb(253, 226, 207) */
+        height: 50px;
+        width: 100vw;
+        margin: 0;
+    }
+    
+    #CoreTeam.active {
+        height: 800px; 
+        /* activated */
+    }
+    
+    #CoreTeam #dropdownIconContainer {
+        position: relative;
+        background-color: rgb(255, 200, 179);
+        height: 50px;
+        cursor: pointer;
+        margin: 0 0 0 -4px;
+    }
+    
+    #CoreTeam #dropdownIconContainer i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: 40px;
+        transition: ease-in-out 250ms;
+    }
+}
+  

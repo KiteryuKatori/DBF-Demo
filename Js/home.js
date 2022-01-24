@@ -1,6 +1,17 @@
 const coreTeamDropDownBtn = document.querySelector('#dropdownIconContainer');
 const CoreTeam = document.querySelector('#CoreTeam');
 const coreTeamList = document.querySelector('.coreTeamList');
+const HeaderDropDownToggle = document.querySelector('#dropDownToggle');
+const HeaderDropDownMenu = document.querySelector('#mainNav');
+
+
+HeaderDropDownToggle.addEventListener("click", () => {
+    if (!HeaderDropDownMenu.classList.contains("active")) {addClass(HeaderDropDownMenu, "active");}
+
+    else {remClass(HeaderDropDownMenu, "active");}
+})
+
+
 
 coreTeamDropDownBtn.addEventListener("click", () => {
 
