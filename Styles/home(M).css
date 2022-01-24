@@ -239,25 +239,145 @@
     }
     
     #CoreTeam.active {
-        height: 800px; 
+        height: 1200px; 
         /* activated */
     }
     
     #CoreTeam #dropdownIconContainer {
         position: relative;
         background-color: rgb(255, 200, 179);
-        height: 50px;
+        height: 60px;
         cursor: pointer;
         margin: 0 0 0 -4px;
     }
     
     #CoreTeam #dropdownIconContainer i {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        font-size: 40px;
-        transition: ease-in-out 250ms;
+        font-size: 36px;
     }
+
+    #CoreTeam #dropdownIconContainer:hover i {
+        font-size: 44px
+    }
+
+    #CoreTeam #dropdownIconContainer.active i {
+        font-size: 40px;
+        top: 40%;
+        transform: translateX(-50%) translateY(-40%) rotate(180deg);
+    }
+
+    #CoreTeam #dropdownIconContainer.active:hover i {
+        font-size: 48px;
+        transform: translateX(-50%) translateY(-30%) rotate(180deg);
+    }
+
+    #CoreTeam .coreTeamList {
+        padding: 0px;
+        display: flex;
+        height: 1120px;
+        /* height: 200px;
+        margin-bottom: 800px; */
+        background-color: var(--memList-color);
+    }
+
+    #CoreTeam .coreTeamList .first-row,
+    #CoreTeam .coreTeamList .second-row {
+        height: 540px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    #CoreTeam .coreTeamList .first-row {
+        /* background-color: rgb(47, 153, 118); */
+    }
+
+    #CoreTeam .coreTeamList .smolCell {
+        display: block;
+        width: 40vw;
+        height: 240px;
+        margin-top: 24px;
+        /* background-color: rgb(111, 252, 98); */
+    }
+
+    /* #CoreTeam .coreTeamList .first-row .smolCell {
+        background-color: aquamarine;
+    } */
+    #CoreTeam .coreTeamList .smolCell .cellHeader {
+        height: 75%;   
+    }
+
+    #CoreTeam .coreTeamList .smolCell .cellContent {
+        padding: 0 6px;
+    }
+
+    #CoreTeam .coreTeamList .smolCell .cellContent h3 {
+        font-size: 16px;
+    }
+
+
+    /* .OurPJ.Section
+    .OurPJ.Section
+    .OurPJ.Section
+    .OurPJ.Section*/
+
+    .OurPJ.Section {
+        /* background-color: aliceblue; */
+        margin-top: -60px;
+    }
+
+    .OurPJ.Section .Slogan-Container .description p {
+        margin-bottom: 16px;
+        /* background-color: violet; */
+        line-height: 32px;
+    }
+
+    .OurPJ.Section .Slogan-Container .description p {
+        margin-bottom: 16px;
+        /* background-color: violet; */
+        line-height: 32px;
+    }
+
+    .OurPJ.Section .largeCell-Container {
+        /* background-color: darkgray; */
+        margin-left: 0;
+        width: 100vw;
+    }
+
+    .a100PagesDescription {
+        /* background: rgb(159, 159, 240); */
+        display: flex;
+        flex-direction: column;
+        margin-top: 48px;
+    }
+
+    .a100PagesDescription .cell {
+        padding: 24px;
+        width: 100vw;
+        border-radius: 8px;
+        margin: 20px 0 0 -4px;
+    }
+
+    .a100PagesDescription .cell .title:first-child {
+        margin: 0 0 8px 0 !important;
+    }
+
+    .a100PagesDescription .cell .title {
+        margin: 16px 0px 8px 0px !important;
+        background-color: #614730;
+        padding: 8px 16px;
+        font-size: 22px;
+    }
+
+    .a100PagesDescription .cell p {
+        margin: 0 0 8px 24px;
+    }
+
+    
+
 }
+
+/* Super Idol de xiao rong
+Dou mei ni de chieng
+ */
   

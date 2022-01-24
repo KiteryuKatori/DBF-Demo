@@ -415,12 +415,12 @@ Coreteam */
 
 #CoreTeam #dropdownIconContainer:active {
     color: var(--color1);
-    background-color: rgb(255, 168, 87);
+    background-color: rgb(255, 181, 111);
     transition: 10ms;
 }
 
 #CoreTeam #dropdownIconContainer.active {
-    background-color: rgb(255, 171, 93);
+    background-color: rgb(255, 174, 97);
 }
 
 #CoreTeam #dropdownIconContainer.active i {
@@ -437,7 +437,7 @@ Coreteam */
 }
 
 #CoreTeam #dropdownIconContainer.active:hover {
-    background-color: rgb(255, 162, 75);
+    background-color: rgb(255, 175, 100);
 }
 
 #CoreTeam .hider {
@@ -454,7 +454,6 @@ Coreteam */
 #CoreTeam .coreTeamList {
     position: relative;
     padding: 0 24px;
-    margin: auto;
     display: none;
     transition: ease-in-out 750ms;
     background-color: var(--memList-color);
