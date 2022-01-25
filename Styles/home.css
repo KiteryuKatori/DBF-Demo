@@ -23,7 +23,7 @@
 
     --memList-color: rgb(255, 233, 206);
 
-    --mainBG-color: rgb(245, 245, 227);
+    --mainBG-color: rgb(255, 250, 241);
 }
 
 #header {
@@ -167,7 +167,8 @@ MAIN BODY SECTION */
     position: relative;
     background-color: var(--mainBG-color);
     margin: 100px 0;
-    padding: 56px 32px 12px 32px;
+    padding: 16px;
+    padding-top: 36px;
 }
 
 .Section > h1 {
@@ -258,7 +259,7 @@ MAIN BODY SECTION */
     display: inline-block;
     width: 40vw;
     height: 75vh;
-    margin-left: 40px;
+    margin-left: 32px;
     vertical-align: top;
     /* background-color: rgb(43, 151, 151); */
     padding: 24px;
@@ -294,10 +295,6 @@ ABOUT US */
 
 .AbtUs.Section {
     
-}
-
-.PodC.Section {
-   height: 500px; 
 }
 
 .AbtUs .Container {
@@ -392,7 +389,8 @@ Coreteam */
     height: 60px;
     cursor: pointer;
     transition: ease-in-out 500ms;
-    margin: -0px 0 0 -36px;
+    margin: 0;
+    width: calc(100% + 8px);
 }
 
 #CoreTeam #dropdownIconContainer i {
@@ -442,7 +440,7 @@ Coreteam */
 
 #CoreTeam .hider {
     position: absolute;
-    height: 100px;
+    height: 120px;
     background-color: var(--mainBG-color);
     width: 100vw;
 }
@@ -551,7 +549,7 @@ OUR PJ  */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 54px
+    margin-top: 80px
 }
 
 .a100PagesDescription .cell {
@@ -595,6 +593,77 @@ OUR PJ  */
     margin: 0;
     line-height: 24px;
 }
+
+
+
+/* PODCAST
+PODCAST
+PODCAST
+PODCAST
+PODCAST */
+
+.PodC.Section {
+    background-color: rgb(154, 196, 196);
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.PodC.Section .Slogan-Container {
+    background-color: rgb(91, 223, 161);
+}
+
+
+
+.PodC.Section .PodcastList-Container {
+    background-color: rgb(110, 97, 182);
+    display: flex;
+    flex-direction: column;
+    margin-left: 36px;
+    width: 45vw;
+    height: 720px;
+    justify-content: space-evenly;
+}
+
+.PodC.Section .PodcastList-Container .Pod {
+    background-color: rgb(86, 218, 126);
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    /* margin-bottom: 12px;  */
+}
+
+.PodC.Section .PodcastList-Container .Pod .imgContainer {
+    position: relative;
+    margin-right: 12px;
+    overflow: hidden;
+    width: 240px;
+    height: 100px;
+    /* background-color: #c48050; */
+    cursor: pointer;
+}
+
+.PodC.Section .PodcastList-Container .Pod .imgContainer img {
+    position: absolute;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.PodC.Section .PodcastList-Container .Pod .in4Container {
+    /* background-color: blanchedalmond; */
+    color: var(--color4);
+    /* vertical-align: center; */
+    /* bottom: 0; */
+    padding-top: 8px;
+}
+
+.PodC.Section .PodcastList-Container .Pod .in4Container h2 {
+
+}
+
 
 #footer {
     position: relative;
