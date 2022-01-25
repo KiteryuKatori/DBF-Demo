@@ -30,7 +30,7 @@
     position: fixed;
     background-color: #fff;
     width: 100vw;
-    height: 80px;
+    /*height: 80px;*/
     z-index: 50;
     top: 0;
 }
@@ -53,20 +53,22 @@
 }
 
 #header .imgContainer {
-    position: relative;
-    margin-left: 640px;
-    background-color: #fff;
-    height: 140px;
-    width: 140px;
+    /*position: relative;*/
+    /*margin-left: 640px;*/
+    /*background-color: #fff;*/
+    /*height: 140px;*/
+    /*width: 140px;*/
     border-radius: 125px;
+    display: flex;
+    justify-content: center;
 }
 
 #header .imgContainer img {
-    position: absolute;
+    /*position: absolute;*/
     height: 140px;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-47.5%) translateY(-50%);
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*transform: translateX(-47.5%) translateY(-50%);*/
     border-radius: 125px;
 }
 
@@ -81,7 +83,7 @@
     right: 0;
 }
 
-#header #mainNav a{
+#header #mainNav a {
     position: relative;
     font-size: 22px;
     text-decoration: none;
@@ -91,12 +93,12 @@
     transition: ease-in-out 350ms;
 }
 
-#header #mainNav a:hover{
+#header #mainNav a:hover {
     margin: 0px 20px 0px 12px;
     color: var(--color1);
 }
 
-#header #mainNav a:not(:first-child)::before{
+#header #mainNav a:not(:first-child)::before {
     position: absolute;
     content: '|';
     top: -4px;
@@ -106,7 +108,7 @@
     transition: ease-in-out 350ms;
 }
 
-#header #mainNav a:not(:first-child):hover:before{
+#header #mainNav a:not(:first-child):hover:before {
     color: var(--color4);
     left: -16px;
 }
@@ -251,7 +253,7 @@ MAIN BODY SECTION */
     transform: translateX(-50%);
 }
 
-.largeCell .cellFooter .btnContainer :nth-child():not(:first-child){
+.largeCell .cellFooter .btnContainer :nth-child():not(:first-child) {
     margin-left: 24px
 }
 
@@ -294,7 +296,7 @@ ABOUT US
 ABOUT US */
 
 .AbtUs.Section {
-    
+
 }
 
 .AbtUs .Container {
@@ -330,11 +332,11 @@ ABOUT US */
     padding: 16px 32px;
     border-radius: 16px;
     background: linear-gradient(
-        to bottom, 
-        rgba(255, 245, 235, 0.4), 40%,
-        rgb(252, 247, 243));
+            to bottom,
+            rgba(255, 245, 235, 0.4), 40%,
+            rgb(252, 247, 243));
     color: #553418;
-    
+
     transition: ease-in-out 750ms;
 }
 
@@ -379,7 +381,7 @@ Coreteam */
 }
 
 #CoreTeam.active {
-    height: 800px; 
+    height: 800px;
     /* activated */
 }
 
@@ -511,7 +513,6 @@ Coreteam */
 }
 
 
-
 /* OUR PJ
 OUR PJ
 OUR PJ
@@ -574,7 +575,7 @@ OUR PJ  */
 }
 
 .a100PagesDescription .cell p {
-    
+
     color: var(--color4);
 }
 
@@ -589,11 +590,10 @@ OUR PJ  */
     color: var(--color4);
 }
 
-.a100PagesDescription .cell li p{
+.a100PagesDescription .cell li p {
     margin: 0;
     line-height: 24px;
 }
-
 
 
 /* PODCAST
@@ -609,11 +609,9 @@ PODCAST */
 }
 
 
-
 .PodC.Section .Slogan-Container {
     background-color: rgb(91, 223, 161);
 }
-
 
 
 .PodC.Section .PodcastList-Container {
@@ -668,4 +666,10 @@ PODCAST */
 #footer {
     position: relative;
     background-color: black;
+}
+
+@media screen and (max-width: 1510px) {
+    #header .imgContainer {
+        display: none !important;
+    }
 }
