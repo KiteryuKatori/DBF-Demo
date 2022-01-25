@@ -104,6 +104,10 @@ if (playlistDisplayer) {
                 console.log(e.className, targetMusic)
                 if (targetMusic) {
                     realPlayer.innerHTML = targetMusic
+                } else {
+                    player.querySelector('.empty-music-state').style.setProperty('display', 'block')
+                    realPlayer.style.setProperty('display', 'none')
+                    player.querySelector('.empty-music-state').innerHTML = 'Podcast not available'
                 }
             })
         }
