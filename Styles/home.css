@@ -259,7 +259,7 @@ MAIN BODY SECTION */
 
 .Slogan-Container {
     display: inline-block;
-    /*width: 40vw;*/
+    width: 40vw;
     flex: 3;
     height: 75vh;
     margin-left: 32px;
