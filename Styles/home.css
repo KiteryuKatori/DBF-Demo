@@ -58,6 +58,7 @@ html {
 }
 
 #header .imgContainer {
+<<<<<<< Updated upstream
     /*position: relative;*/
     /*margin-left: 640px;*/
     /*background-color: #fff;*/
@@ -66,6 +67,14 @@ html {
     border-radius: 125px;
     display: flex;
     justify-content: center;
+=======
+    position: relative;
+    margin-left: 640px;
+    background-color: #fff;
+    height: 140px;
+    width: 140px;
+    border-radius: 125px;  
+>>>>>>> Stashed changes
 }
 
 
@@ -671,6 +680,7 @@ PODCAST */
 }
 
 .PodC.Section .PodcastList-Container .Pod .in4Container h3 {
+<<<<<<< Updated upstream
 
 }
 
@@ -683,14 +693,27 @@ PODCAST */
 
 .music-player > * {
 }
+=======
+>>>>>>> Stashed changes
 
 .music-player .have-some-music-case {
     display: none;
 }
 
+<<<<<<< Updated upstream
 .music-player .empty-music-state {
     text-align: center;
 }
+=======
+.PodC.Section .PodcastList-Container .Pod .in4Container p {
+
+}
+
+
+
+
+
+>>>>>>> Stashed changes
 
 #footer {
     position: relative;
