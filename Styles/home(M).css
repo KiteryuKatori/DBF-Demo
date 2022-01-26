@@ -360,7 +360,7 @@
         /* background: rgb(159, 159, 240); */
         display: flex;
         flex-direction: column;
-        margin-top: 48px;
+        margin-top: 0;
     }
 
     .a100PagesDescription .cell {
@@ -388,8 +388,65 @@
     .AbtUs.Container {
         height: unset;
     }
+
+    .PodC.Section {
+        margin-top: 3rem;
+    }
+
+    #header .imgContainer {
+        transform: translateY(-75%);
+    }
+
+    #dropDownToggle {
+        margin-top: 0;
+    }
+
+    #header .basic-box img {
+        height: 6rem;
+        width: auto;
+    }
+
+    #header #mainNav {
+        transform: translateY(-69%);
+    }
 }
 
+@media screen and (max-width: 860px) {
+
+    .AbtUs.Container {
+        height: 5rem;
+    }
+
+    .PodC.Section .PodcastList-Container {
+        margin-right: 36px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .a100PagesDescription .cell {
+        margin-bottom: 1rem;
+    }
+
+    .a100PagesDescription .cell .title {
+        margin-top: 1.5rem;
+    }
+
+    .PodC.Section {
+        margin-top: 0;
+    }
+
+    #OurPJ {
+        margin-bottom: 0;
+    }
+
+    #OurPJ .largeCell-Container {
+        display: none;
+    }
+
+    .PodC.Section .Slogan-Container
+}
 
 @media screen and (max-width: 465px) {
 

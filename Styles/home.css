@@ -262,7 +262,7 @@ MAIN BODY SECTION */
     transform: translateX(-50%);
 }
 
-.largeCell .cellFooter .btnContainer :nth-child():not(:first-child) {
+.largeCell .cellFooter .btnContainer :nth-child(1):not(:first-child) {
     margin-left: 24px
 }
 
@@ -787,6 +787,41 @@ PODCAST */
     }
 }
 
+@media screen and (max-width: 1160px) {
+    #OurPJ .largeCell {
+        display: none;
+    }
+
+    #OurPJ.Section .Slogan-Container {
+        width: auto;
+        height: auto;
+    }
+
+    .a100PagesDescription {
+        margin-top: 0;
+    }
+
+    #Podcast {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #Podcast .Slogan-Container {
+        flex-basis: 100%;
+        height: unset;
+    }
+
+    #Podcast .music-player {
+        flex: 1;
+    }
+
+    #Podcast .PodcastList-Container {
+        max-height: 25rem;
+        overflow: scroll;
+        justify-content: unset;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .invisible-M {
         display: none;
@@ -802,7 +837,7 @@ PODCAST */
 
 @media screen and (max-width: 870px) {
 
-    .invisible-S {
+    .invisible-M {
         display: none !important;
     }
 
@@ -844,6 +879,19 @@ PODCAST */
 
     }
 }
+
+@media screen and (max-width: 780px) {
+    #Podcast .music-player {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    #Podcast .PodcastList-Container {
+        flex: unset;
+        max-height: 13rem;
+    }
+}
+
 
 @media screen and (max-width: 690px) {
 
