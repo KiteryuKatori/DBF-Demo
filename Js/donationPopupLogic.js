@@ -12,10 +12,10 @@ var popupContent = `
         <button class="Btn donate-choice" onclick="donateRedirection('cake')">Cake</button>
     </div>
     <div class="donate-choice-wrapper">
-        <button class="Btn donate-choice">Book</button>
+        <button class="Btn donate-choice" onclick="donateRedirection('book')">Book</button>
     </div>
     <div class="donate-choice-wrapper">
-        <button class="Btn donate-choice">Cash</button>
+        <button class="Btn donate-choice" onclick="donateRedirection('cash')">Cash</button>
     </div>
 </div>
 `
