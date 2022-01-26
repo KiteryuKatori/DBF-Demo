@@ -701,3 +701,12 @@ PODCAST */
         display: none !important;
     }
 }
+
+/*donate popup styling*/
+.donate-popup-content-wrapper {
+    padding-top: 1rem;
+}
+
+.donate-choice-wrapper + .donate-choice-wrapper {
+    margin-top: 2rem;
+}
