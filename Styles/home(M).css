@@ -1,4 +1,8 @@
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 690px) {
+
+    .alternative-icon .imgContainer img {
+        display: none !important;
+    }
 
     #header {
         background-color: #fff;
@@ -15,8 +19,6 @@
         top: 50%;
         transform: translateY(-50%);
         /* background-color: darkblue; */
-
-
     #header .imgContainer {
         position: absolute;
         z-index: 50;
@@ -47,7 +49,9 @@
         text-align: right;
     }
 
-    #mainNav.active {display: flex}
+    #mainNav.active {
+        display: flex
+    }
 
     #mainNav a,
     #header #mainNav a {
@@ -59,15 +63,14 @@
     }
 
     #header #mainNav a:before,
-    #header #mainNav a:first-child:before
-    {
+    #header #mainNav a:first-child:before {
         display: none;
     }
 
     #mainNav a:hover {
         padding-right: 48px !important;
     }
-    
+
     #header #dropDownToggle.ti-menu {
         position: absolute;
         display: block;
@@ -76,8 +79,9 @@
         right: 24px;
         transform: translateY(-50%);
         font-size: 40px;
+        margin-top: 1rem;
     }
-    
+
     #header button {
         display: none;
     }
@@ -90,16 +94,14 @@
     COMMON STYLES
     COMMON STYLES
      */
-
     .Section {
         margin: 48px 0;
         padding: 24px 4px;
     }
-    
+
     .Section > h1 {
         font-size: 48px;
     }
-
 
 
     .Slogan-Container {
@@ -113,20 +115,19 @@
     .Slogan-Container .SSlogan {
         color: var(--color2);
     }
-    
+
     .Slogan-Container .LSlogan {
         color: var(--color4);
         font-size: 48px;
-        text-align: center; 
+        text-align: center;
     }
-    
+
     .Slogan-Container .description {
         margin-top: 16px;
         color: rgb(99, 94, 90);
         font-size: 20px;
         padding: 0 16px;
     }
-
 
 
     .largeCell-Container {
@@ -136,7 +137,7 @@
         margin-left: -4px;
         /* background-color: blue; */
     }
-    
+
     .largeCell {
         position: relative;
         margin: auto;
@@ -147,7 +148,6 @@
         overflow: hidden;
         box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.5);
     }
-
 
 
     .Btn {
@@ -169,11 +169,9 @@
     COMMON STYLES END
     COMMON STYLES END
      */
-
     /* A100PAGEs SECTION
     A100PAGEs SECTION
     A100PAGEs SECTION */
-
     .main.Section {
         display: flex;
         flex-direction: column-reverse;
@@ -190,7 +188,6 @@
     /* AbtUs SECTION
     AbtUs SECTION
     AbtUs SECTION */
-    
     .AbtUs.Container {
         position: relative;
         display: block;
@@ -217,9 +214,9 @@
         padding: 12px 24px;
 
         background: linear-gradient(
-        to bottom, 
-        rgba(255, 245, 235, 0.6), 20%,
-        rgb(252, 247, 243, 0.8), 80%, rgba(255, 245, 235, 0.6));
+                to bottom,
+                rgba(255, 245, 235, 0.6), 20%,
+                rgb(252, 247, 243, 0.8), 80%, rgba(255, 245, 235, 0.6));
 
         color: #553418;
     }
@@ -234,7 +231,7 @@
         font-size: 20px;
         margin-bottom: 16px;
     }
-    
+
     .TextContainer p {
         margin: 0;
         transition: ease-in-out 750ms;
@@ -245,7 +242,6 @@
     /* AbtUs SECTION BUT THIS IS ABOUT CORETEAM
     AbtUs SECTION BUT THIS IS ABOUT CORETEAM
     AbtUs SECTION BUT THIS IS ABOUT CORETEAM*/
-
     #CoreTeam {
         position: relative;
         /* background-color: rgb(110, 159, 252); */
@@ -254,12 +250,12 @@
         width: 100vw;
         margin: 0;
     }
-    
+
     #CoreTeam.active {
-        height: 1200px; 
+        height: 1200px;
         /* activated */
     }
-    
+
     #CoreTeam #dropdownIconContainer {
         position: relative;
         background-color: rgb(255, 200, 179);
@@ -267,7 +263,7 @@
         cursor: pointer;
         margin: 0 0 0 -4px;
     }
-    
+
     #CoreTeam #dropdownIconContainer i {
         font-size: 36px;
     }
@@ -321,7 +317,7 @@
         background-color: aquamarine;
     } */
     #CoreTeam .coreTeamList .smolCell .cellHeader {
-        height: 75%;   
+        height: 75%;
     }
 
     #CoreTeam .coreTeamList .smolCell .cellContent {
@@ -337,7 +333,6 @@
     .OurPJ.Section
     .OurPJ.Section
     .OurPJ.Section*/
-
     .OurPJ.Section {
         /* background-color: aliceblue; */
         margin-top: -60px;
@@ -390,9 +385,37 @@
         margin: 0 0 8px 24px;
     }
 
+    .AbtUs.Container {
+        height: unset;
+    }
 }
 
-/* Super Idol de xiao rong
-Dou mei ni de chieng
- */
-  
+
+@media screen and (max-width: 465px) {
+
+    .AbtUs.Container {
+        height: 5rem;
+    }
+}
+
+@media screen and (max-width: 406px) {
+
+    .AbtUs.Container {
+        height: 8rem;
+    }
+}
+
+
+@media screen and (max-width: 390px) {
+
+    .AbtUs.Container {
+        height: 11rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .AbtUs.Container {
+        height: 14rem;
+    }
+}
