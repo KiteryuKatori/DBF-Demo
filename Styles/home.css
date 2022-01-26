@@ -76,6 +76,10 @@
     display: none;
 }
 
+/* #DBFName_M {
+    display: none;;
+} */
+
 #header #mainNav {
     position: absolute;
     top: 50%;
@@ -692,7 +696,7 @@ PODCAST */
     background-color: black;
 }
 
-@media screen and (max-width: 1510px) {
+@media screen and (max-width: 1510px) and (min-width: 420px) {
     #header .imgContainer {
         height: 140px;
     }
