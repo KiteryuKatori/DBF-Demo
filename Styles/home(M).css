@@ -8,16 +8,16 @@
         position: absolute;
         z-index: 50;
         top: 80%;
-        left: 50%;
+        left: 15%;
         transform: translateX(-50%)  translateY(-50%);
         margin-left: 0px;
-        height: 100px;
-        width: 100px;
+        height: 160px;
+        width: 160px;
     }
 
     #header .imgContainer img {
-        width: 120px;
-        height: 124px;
+        width: 180px;
+        height: 192px;
     }
 
     #mainNav {
@@ -25,30 +25,41 @@
         flex-direction: column;
         left: -24px;
         display: none;
+        text-align: right;
     }
 
     #mainNav.active {display: flex}
 
-    #mainNav a,
     #header #mainNav a {
-        margin: 0px 20px -1px 0px;
-        padding: 12px 16px 12px 48px;
+        padding: 12px 24px 12px 48px;
         background-color: var(--idk1);
-        font-size: 24px;
+        font-size: 28px;
         width: calc(100vw + 32px);
+
     }
 
-    #mainNav a:before{
+    #DonateBtnM {
+        display: block;
+    }
+
+    #mainNav a:before {
+        content: "|";
         position: absolute;
-        content: '|';
-        top: -4px;
-        left: 20px !important;
+        top: -4px !important;
+        right: 12px !important;
         padding: 12px 0;
-        margin-left: 12px;
+        font-weight: bolder !important;
+        font-size: 32px !important;
     }
 
-    #mainNav a:hover:before{
+    #mainNav a:hover {
+        padding-right: 52px !important;
+    }
+
+    #mainNav a:hover:before, 
+    #mainNav a:first-child::before {
         color: var(--color1) !important;
+        padding-right: 24px !important;
     }
     
     #header #dropDownToggle.ti-menu {
@@ -303,6 +314,7 @@
     /* #CoreTeam .coreTeamList .first-row .smolCell {
         background-color: aquamarine;
     } */
+
     #CoreTeam .coreTeamList .smolCell .cellHeader {
         height: 75%;   
     }

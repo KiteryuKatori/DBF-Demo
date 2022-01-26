@@ -13,6 +13,11 @@
     font-family: 'Nunito';
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 48px;
+}
+
 :root {
     --color1: #E7A657;
     --color2: #DC9B4D;
@@ -63,6 +68,7 @@
     justify-content: center;
 }
 
+
 #header .imgContainer img {
     /*position: absolute;*/
     height: 140px;
@@ -93,7 +99,11 @@
     transition: ease-in-out 350ms;
 }
 
-#header #mainNav a:hover {
+#DonateBtnM {
+    display: none;
+}
+
+#header #mainNav a:hover{
     margin: 0px 20px 0px 12px;
     color: var(--color1);
 }
@@ -660,7 +670,7 @@ PODCAST */
     padding-top: 8px;
 }
 
-.PodC.Section .PodcastList-Container .Pod .in4Container h2 {
+.PodC.Section .PodcastList-Container .Pod .in4Container h3 {
 
 }
 
