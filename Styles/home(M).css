@@ -445,7 +445,9 @@
         display: none;
     }
 
-    .PodC.Section .Slogan-Container
+    .PodC.Section .Slogan-Container {
+
+    }
 }
 
 @media screen and (max-width: 465px) {
@@ -474,5 +476,10 @@
 
     .AbtUs.Container {
         height: 14rem;
+    }
+
+    .PodC.Section .PodcastList-Container{
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
     }
 }
