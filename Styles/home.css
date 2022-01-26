@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+:root {
+    --navBar-Height: 140px;
+}
+
 /*
 #E7A657
 #DC9B4D
@@ -65,7 +69,7 @@
 
 #header .imgContainer img {
     /*position: absolute;*/
-    height: 140px;
+    height: var(--navBar-Height);
     /*left: 50%;*/
     /*top: 50%;*/
     /*transform: translateX(-47.5%) translateY(-50%);*/
@@ -161,16 +165,14 @@ MAIN BODY SECTION */
 
 #main {
     margin-top: calc(var(--navBar-Height));
-    padding: 40px 0;
     background-color: var(--mainBG-color);
 }
 
 .Section {
     position: relative;
     background-color: var(--mainBG-color);
-    margin: 100px 0;
+    /*margin: 100px 0;*/
     padding: 16px;
-    padding-top: 36px;
 }
 
 .Section > h1 {
@@ -692,9 +694,9 @@ PODCAST */
     background-color: black;
 }
 
-@media screen and (max-width: 1510px) {
+@media screen and (max-width: 1245px) {
     #header .imgContainer {
-        height: 140px;
+        height: var(--navBar-Height);
     }
 
     #header .imgContainer img {
