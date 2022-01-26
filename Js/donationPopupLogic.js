@@ -20,7 +20,7 @@ var popupContent = `
 </div>
 `
 
-document.querySelector('.donate-btn').addEventListener('click', function () {
+function popDonation() {
     Swal.fire({
         // title: '<strong>HTML <u>example</u></strong>',
         // icon: 'info',
@@ -35,4 +35,15 @@ document.querySelector('.donate-btn').addEventListener('click', function () {
             '<i class="fa fa-thumbs-down"></i>',
         cancelButtonAriaLabel: 'Thumbs down',
     })
+}
+
+const donatableSrc = [
+    document.querySelector('#MDonateBtn'),
+    document.querySelector('.top-left-side-icons.donate-btn'),
+    document.querySelector('.regular-donate.donate-btn')
+]
+    .filter(x => !!x)
+
+donatableSrc.forEach(el => {
+    el.addEventListener('click', popDonation)
 })
