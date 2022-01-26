@@ -2,6 +2,8 @@
 
 :root {
     --navBar-Height: 140px;
+    --short-transition: 200ms;
+    --long-transition: 350ms;
 }
 
 /*
@@ -94,7 +96,7 @@
     color: var(--color4);
     margin-right: 16px;
     font-weight: 600;
-    transition: ease-in-out 350ms;
+    transition: ease-in-out var(--short-transition);
 }
 
 #header #mainNav a:hover {
@@ -109,7 +111,7 @@
     left: -12px;
     font-size: 24px;
     font-weight: 500;
-    transition: ease-in-out 350ms;
+    transition: ease-in-out var(--short-transition);
 }
 
 #header #mainNav a:not(:first-child):hover:before {
@@ -131,7 +133,7 @@
     cursor: pointer;
     overflow: hidden;
     z-index: 10;
-    transition: ease-in 500ms;
+    transition: ease-in var(--long-transition);
 }
 
 .Btn::before {
@@ -145,7 +147,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
-    transition: ease-in-out 500ms;
+    transition: ease-in-out var(--long-transition);
 }
 
 .Btn:hover {
@@ -173,6 +175,7 @@ MAIN BODY SECTION */
     background-color: var(--mainBG-color);
     /*margin: 100px 0;*/
     padding: 16px;
+    min-height: 36rem;
 }
 
 .Section > h1 {
@@ -340,7 +343,7 @@ ABOUT US */
             rgb(252, 247, 243));
     color: #553418;
 
-    transition: ease-in-out 750ms;
+    transition: ease-in-out var(--long-transition);
 }
 
 .AbtUs .Container:hover .TextContainer {
@@ -350,13 +353,13 @@ ABOUT US */
 
 .TextContainer h3 {
     margin: 0;
-    transition: ease-in-out 750ms;
+    transition: ease-in-out var(--long-transition);
     font-size: 18px;
 }
 
 .TextContainer p {
     margin: 0;
-    transition: ease-in-out 750ms;
+    transition: ease-in-out var(--long-transition);
     font-size: 18px;
 }
 
@@ -380,7 +383,7 @@ Coreteam */
     width: 100vw;
     /* height: 800px; activated */
     margin: -100px 0 0 -36px;
-    transition: ease-in-out 750ms;
+    transition: ease-in-out var(--long-transition);
 }
 
 #CoreTeam.active {
@@ -393,7 +396,7 @@ Coreteam */
     background-color: rgb(255, 200, 179);
     height: 60px;
     cursor: pointer;
-    transition: ease-in-out 500ms;
+    transition: ease-in-out var(--long-transition);
     margin: 0;
     width: calc(100% + 8px);
 }
@@ -404,7 +407,7 @@ Coreteam */
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     font-size: 40px;
-    transition: ease-in-out 250ms;
+    transition: ease-in-out var(--short-transition);
 }
 
 #CoreTeam #dropdownIconContainer:hover {
@@ -419,7 +422,7 @@ Coreteam */
 #CoreTeam #dropdownIconContainer:active {
     color: var(--color1);
     background-color: rgb(255, 181, 111);
-    transition: 10ms;
+    transition: var(--short-transition);
 }
 
 #CoreTeam #dropdownIconContainer.active {
@@ -458,7 +461,7 @@ Coreteam */
     position: relative;
     padding: 0 24px;
     display: none;
-    transition: ease-in-out 750ms;
+    transition: ease-in-out var(--long-transition);
     background-color: var(--memList-color);
 }
 
@@ -609,6 +612,7 @@ PODCAST */
     /*background-color: rgb(154, 196, 196);*/
     display: flex;
     flex-direction: row;
+    margin-top: 7rem;
 }
 
 
@@ -711,4 +715,13 @@ PODCAST */
 
 .donate-choice-wrapper + .donate-choice-wrapper {
     margin-top: 2rem;
+}
+
+#Podcast .Slogan-Container {
+    padding-top: 0;
+}
+
+/*change between centered and left side icon*/
+.alternative-icon {
+    display: none;
 }
