@@ -6,7 +6,7 @@
 
     #header {
         background-color: #fff;
-        height: 80px;
+        height: 82px;
     }
 
     /* #DBFName_M {
@@ -79,7 +79,6 @@
         right: 24px;
         transform: translateY(-50%);
         font-size: 40px;
-        margin-top: 1rem;
     }
 
     #header button {
@@ -201,10 +200,6 @@
     .AbtUs.Container .imgContainer {
         height: 100%;
         width: 100vw;
-    }
-
-    .AbtUs.Container .imgContainer img {
-        width: 680px;
     }
 
     .AbtUs.Container .TextContainer {
@@ -404,10 +399,27 @@
     #header .basic-box img {
         height: 6rem;
         width: auto;
+        margin-top: 0.25rem;
     }
 
     #header #mainNav {
         transform: translateY(-69%);
+    }
+
+    .AbtUs.Container .imgContainer, .AbtUs.Container .imgContainer img {
+        width: 100%;
+    }
+
+    #header {
+        width: 100%;
+    }
+
+    #header, #main, #footer {
+        overflow-x: hidden;
+    }
+
+    :root {
+        --navBar-Height: 35px;
     }
 }
 
@@ -448,6 +460,7 @@
     .PodC.Section .Slogan-Container {
 
     }
+
 }
 
 @media screen and (max-width: 465px) {
@@ -478,7 +491,7 @@
         height: 14rem;
     }
 
-    .PodC.Section .PodcastList-Container{
+    .PodC.Section .PodcastList-Container {
         margin-left: 1rem !important;
         margin-right: 1rem !important;
     }
