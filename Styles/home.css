@@ -522,6 +522,21 @@ Coreteam */
 
 }
 
+.main.Section .largeCell {
+    height: unset;
+}
+
+.main.Section .largeCell .cellHeader {
+    display: block;
+    width: unset;
+    height: unset;
+    position: unset;
+    padding: 0.3rem 0.4rem
+}
+
+.main.Section .largeCell .cellHeader > * {
+    min-height: 315px;
+}
 
 /* OUR PJ
 OUR PJ
