@@ -311,6 +311,9 @@
         width: 40vw;
         height: 240px;
         margin-top: 24px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         /* background-color: rgb(111, 252, 98); */
     }
 
@@ -465,6 +468,11 @@
 
     .PodC.Section .Slogan-Container {
 
+    }
+
+    #CoreTeam .coreTeamList .smolCell .cellHeader img {
+        height: 12rem;
+        width: auto !important;
     }
 
 }

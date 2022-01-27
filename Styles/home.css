@@ -485,7 +485,7 @@ Coreteam */
 }
 
 #CoreTeam .coreTeamList .smolCell {
-    min-width: 15vw;
+    min-width: 10rem;
     height: 300px;
     background-color: #c48050;
     border-radius: 12px;
@@ -739,7 +739,40 @@ PODCAST */
     /*flex-basis: 25%;*/
 }
 
-@media screen and (max-width: 1296px) and (min-width: 420px) {
+.Section {
+    display: block;
+}
+
+.main.Section .Slogan-Container {
+    height: unset;
+}
+
+#AboutUs .Slogan-Container {
+    height: unset;
+}
+
+#CoreTeam {
+    position: inherit;
+    margin-top: 0;
+}
+
+.core-member-wrapper .LSlogan {
+    color: var(--color4);
+    font-size: 48px;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+}
+
+.TextContainer {
+    height: auto;
+    padding: 0;
+}
+
+.AbtUs .Container:hover .TextContainer {
+    top: -10%;
+}
+
+@media screen and (max-width: 1442px) and (min-width: 420px) {
     #header .imgContainer {
         height: var(--navBar-Height);
     }
@@ -889,6 +922,10 @@ PODCAST */
     #Podcast .PodcastList-Container {
         flex: unset;
         max-height: 13rem;
+    }
+
+    .top-left-side-icons .alternative-icon .imgContainer img {
+        margin-left: 3rem;
     }
 }
 
