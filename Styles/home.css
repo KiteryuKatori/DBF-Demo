@@ -776,6 +776,14 @@ PODCAST */
     font-size: 48px;
     margin-left: 4rem;
     margin-bottom: 1rem;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 690px){
+    .core-member-wrapper .LSlogan {
+        margin-left: 0;
+        text-align: center;
+    }
 }
 
 .TextContainer {
