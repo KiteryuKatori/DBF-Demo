@@ -246,9 +246,15 @@
         margin: 0;
     }
 
+    #CoreTeam {
+        margin-top: 0;
+    }
+
     #CoreTeam.active {
-        height: 1200px;
+        /*height: 1200px;*/
         /* activated */
+        overflow: auto;
+        padding-bottom: 1rem;
     }
 
     #CoreTeam #dropdownIconContainer {
