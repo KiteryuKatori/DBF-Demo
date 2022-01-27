@@ -136,11 +136,15 @@ html {
 
 .Btn {
     position: relative;
-    width: 140px;
-    height: 54px;
+    width: 100px;
+    min-width: 60px;
+    height: 48px;
     border: 2px solid var(--color4);
     border-radius: 54px;
-    font-size: 20px;
+    /* font-size: 16px; */
+    text-decoration: none;
+    line-height: 44px;
+    text-align: center;
     font-weight: 600;
     color: var(--color4);
     background-color: #fff;
@@ -217,7 +221,7 @@ MAIN BODY SECTION */
     position: relative;
     margin: auto;
     width: 55%;
-    height: 480px;
+    height: 440px;
     background-color: #fff;
     border-radius: 36px;
     overflow: hidden;
@@ -671,7 +675,6 @@ PODCAST */
     background: #ebcfb7;
     border-radius: 10px;
     margin-bottom: 1rem;
-
     /* margin-bottom: 12px;  */
 }
 
@@ -684,6 +687,7 @@ PODCAST */
     height: 100px;
     /* background-color: #c48050; */
     cursor: pointer;
+    flex: 1;
 }
 
 .PodC.Section .PodcastList-Container .Pod .imgContainer img {
@@ -700,6 +704,7 @@ PODCAST */
     /* vertical-align: center; */
     /* bottom: 0; */
     padding-top: 8px;
+    flex: 2;
 }
 
 .PodC.Section .PodcastList-Container .Pod .in4Container h3 {
@@ -725,12 +730,6 @@ PODCAST */
 .music-player .empty-music-state {
     text-align: center;
 }
-
-#footer {
-    position: relative;
-    background-color: black;
-}
-
 
 /*donate popup styling*/
 .donate-popup-content-wrapper {
@@ -887,10 +886,65 @@ PODCAST */
 
     #Podcast .PodcastList-Container {
         max-height: 25rem;
-        overflow: scroll;
+        overflow-y: scroll;
         justify-content: unset;
     }
 }
+
+/* <div id="Donor" class="Donor Section">
+            <div class="Slogan-Container">
+                <h1 class="LSlogan">Người quyên góp</h1>
+            
+                <p class="description">Xin trân trọng cảm ơn</p>
+            </div>
+            <div class="donor-Container">
+                <div class="donor-List">
+                    <p>Donor 1</p>
+                    <p>Donor 1</p>
+                    <p>Donor 1</p>
+                    <p>Donor 1</p>
+                    <p>Donor 1</p>
+                    <p>Donor 1</p>
+                    <p>Donor 1</p>
+                    <p>Tạm trống</p>
+                </div>
+            </div> */
+#Donor.Donor {
+    /* background-color: rgb(186, 186, 233); */
+    text-align: center;
+    height: 300px;
+}
+
+#Donor.Donor .Slogan-Container {
+    height: 20vh;
+
+}
+
+#Donor.Donor .donor-Container {
+    /* background-color: rgb(133, 133, 196); */
+}
+
+#Donor.Donor .donor-Container .donor-List {
+    /* background-color: rgb(101, 101, 175); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60vw;
+    margin: auto;
+    padding: 24px;
+    border: 2px solid #553418;
+    border-radius: 12px;
+    justify-content: center;
+    /* justify-self: center; */
+}
+
+#Donor.Donor .donor-Container .donor-List p {
+    /* background-color: rgb(56, 56, 146); */
+    margin: 6px 16px;
+    min-width: 180px;
+}
+
+
 
 @media screen and (max-width: 1024px) {
     .invisible-M {
@@ -993,3 +1047,53 @@ PODCAST */
 
 }
 
+
+
+
+
+#footer {
+    position: relative;
+    background-color: rgb(32, 32, 32);
+    min-height: 160px;
+    /* display: flex;
+    flex-direction: row; */
+    /* padding: 24px; */
+}
+
+#footer .imgContainer {
+    display: inline-block;
+    margin-left: 36px;
+}
+
+#footer .imgContainer img {
+    width: 200px;
+}
+
+#footer .in4Container {
+    display: inline-block;
+    width: calc(100% - 180px - 80px);
+    vertical-align: top;
+    /* background-color: #b8a258; */
+    padding: 12px;
+    color: #d3cfcc;
+    
+}
+
+#footer .in4Container .contact {
+    width: 60vw;
+    margin: auto;
+}
+
+#footer .in4Container h2 {
+    margin-bottom: 6px;
+}
+
+#footer .in4Container p {
+    padding: 4px;
+    margin-top: 4px;
+}
+
+#footer .in4Container a {
+    text-decoration: none;
+    color: #ee945f;
+}
