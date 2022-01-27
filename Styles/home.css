@@ -667,6 +667,10 @@ PODCAST */
     justify-content: space-evenly;
 }
 
+.PodC.Section .PodcastList-Container .mobileHint {
+    display: none;
+}
+
 .PodC.Section .PodcastList-Container .Pod {
     /*background-color: rgb(86, 218, 126);*/
     display: flex;
@@ -922,6 +926,7 @@ PODCAST */
 
 #Donor.Donor .donor-Container {
     /* background-color: rgb(133, 133, 196); */
+    margin-top: 0;
 }
 
 #Donor.Donor .donor-Container .donor-List {
@@ -943,6 +948,59 @@ PODCAST */
     margin: 6px 16px;
     min-width: 180px;
 }
+
+
+
+
+
+#footer {
+    position: relative;
+    background-color: rgb(32, 32, 32);
+    min-height: 160px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#footer .imgContainer {
+    display: inline-block;
+    margin-left: 36px;
+}
+
+#footer .imgContainer img {
+    width: 200px;
+}
+
+#footer .in4Container {
+    display: inline-block;
+    width: calc(100% - 180px - 80px);
+    vertical-align: top;
+    /* background-color: #b8a258; */
+    padding: 12px;
+    color: #d3cfcc;
+    
+}
+
+#footer .in4Container .contact {
+    width: 60vw;
+    margin: auto;
+}
+
+#footer .in4Container h2 {
+    margin-bottom: 6px;
+}
+
+#footer .in4Container p {
+    padding: 4px;
+    margin-top: 4px;
+}
+
+#footer .in4Container a {
+    text-decoration: none;
+    color: #ee945f;
+}
+
+
 
 
 
@@ -1013,11 +1071,9 @@ PODCAST */
     #Podcast .PodcastList-Container {
         flex: unset;
         max-height: 13rem;
+        height: 200px;
     }
 
-    .top-left-side-icons .alternative-icon .imgContainer img {
-        margin-left: 3rem;
-    }
 }
 
 
@@ -1047,53 +1103,3 @@ PODCAST */
 
 }
 
-
-
-
-
-#footer {
-    position: relative;
-    background-color: rgb(32, 32, 32);
-    min-height: 160px;
-    /* display: flex;
-    flex-direction: row; */
-    /* padding: 24px; */
-}
-
-#footer .imgContainer {
-    display: inline-block;
-    margin-left: 36px;
-}
-
-#footer .imgContainer img {
-    width: 200px;
-}
-
-#footer .in4Container {
-    display: inline-block;
-    width: calc(100% - 180px - 80px);
-    vertical-align: top;
-    /* background-color: #b8a258; */
-    padding: 12px;
-    color: #d3cfcc;
-    
-}
-
-#footer .in4Container .contact {
-    width: 60vw;
-    margin: auto;
-}
-
-#footer .in4Container h2 {
-    margin-bottom: 6px;
-}
-
-#footer .in4Container p {
-    padding: 4px;
-    margin-top: 4px;
-}
-
-#footer .in4Container a {
-    text-decoration: none;
-    color: #ee945f;
-}

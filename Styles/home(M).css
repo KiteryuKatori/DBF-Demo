@@ -333,6 +333,10 @@
         font-size: 16px;
     }
 
+    .core-member-wrapper .LSlogan {
+        font-size: 44px;
+        
+    }
 
     /* .OurPJ.Section
     .OurPJ.Section
@@ -435,7 +439,51 @@
     .main.Section .largeCell .cellHeader > * {
         /*width: 100%;*/
     }
+
+
+    .top-left-side-icons .alternative-icon .imgContainer img {
+        margin-left: 3rem;
+    }
+
+    .PodC.Section .PodcastList-Container .mobileHint {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: -12px;
+        right: 16px;
+        font-size: 12px;
+    }
+
+    #Donor.Donor .donor-Container {
+        margin-top: 48px;
+    }
+
+
+
+
+    #footer {
+
+    }
+    
+    #footer .imgContainer {
+        display: inline-block;
+        margin-left: 0px;
+    }
+    
+    #footer .imgContainer img {
+        width: 120px;
+    }
+    
+    #footer .in4Container {
+        flex-direction: column;
+    }
+    
+    #footer .in4Container .contact {
+        margin-left: -24px;
+    }
+    
 }
+
 
 @media screen and (max-width: 860px) {
 

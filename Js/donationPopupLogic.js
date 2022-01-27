@@ -1,5 +1,6 @@
 var donateMap = {
-    'cake': 'https://youtube.com'
+    'food': 'https://docs.google.com/forms/d/e/1FAIpQLSc3WY-BjoQ2Zm25B614VXc5nvUJ5MJagWbKpYhQSZQq9LP_Zg/viewform',
+    'stuff': 'https://docs.google.com/forms/d/e/1FAIpQLSdAZYpbaZLUzqZf4aE2lxzQpLKKbqSOvTNko2B_CsoWFJgseQ/viewform'
 }
 var donateRedirection = (val) => {
     console.log('Hello', val)
@@ -9,13 +10,13 @@ var donateRedirection = (val) => {
 var popupContent = `
 <div class="donate-popup-content-wrapper">
     <div class="donate-choice-wrapper">
-        <button class="Btn donate-choice" onclick="donateRedirection('cake')">Cake</button>
+        <button class="Btn donate-choice" onclick="donateRedirection('food')">Sản phẩm</button>
     </div>
     <div class="donate-choice-wrapper">
-        <button class="Btn donate-choice" onclick="donateRedirection('book')">Book</button>
+        <button class="Btn donate-choice" onclick="donateRedirection('stuff')">Hiện vật</button>
     </div>
     <div class="donate-choice-wrapper">
-        <button class="Btn donate-choice" onclick="donateRedirection('cash')">Cash</button>
+        <button class="Btn donate-choice" onclick="donateRedirection('cash')">Hiện kim</button>
     </div>
 </div>
 `
