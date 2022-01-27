@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+:root {
+    --navBar-Height: 140px;
+    --short-transition: 200ms;
+    --long-transition: 350ms;
+}
+
 /*
 #E7A657
 #DC9B4D
@@ -15,7 +21,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 48px;
+    scroll-padding-top: 120px;
 }
 
 :root {
@@ -58,7 +64,6 @@ html {
 }
 
 #header .imgContainer {
-<<<<<<< Updated upstream
     /*position: relative;*/
     /*margin-left: 640px;*/
     /*background-color: #fff;*/
@@ -67,20 +72,12 @@ html {
     border-radius: 125px;
     display: flex;
     justify-content: center;
-=======
-    position: relative;
-    margin-left: 640px;
-    background-color: #fff;
-    height: 140px;
-    width: 140px;
-    border-radius: 125px;  
->>>>>>> Stashed changes
 }
 
 
 #header .imgContainer img {
     /*position: absolute;*/
-    height: 140px;
+    height: var(--navBar-Height);
     /*left: 50%;*/
     /*top: 50%;*/
     /*transform: translateX(-47.5%) translateY(-50%);*/
@@ -90,6 +87,10 @@ html {
 #header .ti-menu {
     display: none;
 }
+
+/* #DBFName_M {
+    display: none;;
+} */
 
 #header #mainNav {
     position: absolute;
@@ -105,7 +106,7 @@ html {
     color: var(--color4);
     margin-right: 16px;
     font-weight: 600;
-    transition: ease-in-out 350ms;
+    transition: ease-in-out var(--short-transition);
 }
 
 #DonateBtnM {
@@ -124,7 +125,7 @@ html {
     left: -12px;
     font-size: 24px;
     font-weight: 500;
-    transition: ease-in-out 350ms;
+    transition: ease-in-out var(--short-transition);
 }
 
 #header #mainNav a:not(:first-child):hover:before {
@@ -146,7 +147,7 @@ html {
     cursor: pointer;
     overflow: hidden;
     z-index: 10;
-    transition: ease-in 500ms;
+    transition: ease-in var(--long-transition);
 }
 
 .Btn::before {
@@ -160,7 +161,7 @@ html {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
-    transition: ease-in-out 500ms;
+    transition: ease-in-out var(--long-transition);
 }
 
 .Btn:hover {
@@ -180,16 +181,15 @@ MAIN BODY SECTION */
 
 #main {
     margin-top: calc(var(--navBar-Height));
-    padding: 40px 0;
     background-color: var(--mainBG-color);
 }
 
 .Section {
     position: relative;
     background-color: var(--mainBG-color);
-    margin: 100px 0;
+    /*margin: 100px 0;*/
     padding: 16px;
-    padding-top: 36px;
+    min-height: 36rem;
 }
 
 .Section > h1 {
@@ -272,13 +272,13 @@ MAIN BODY SECTION */
     transform: translateX(-50%);
 }
 
-.largeCell .cellFooter .btnContainer :nth-child():not(:first-child) {
+.largeCell .cellFooter .btnContainer :nth-child(1):not(:first-child) {
     margin-left: 24px
 }
 
 .Slogan-Container {
     display: inline-block;
-    /*width: 40vw;*/
+    width: 40vw;
     flex: 3;
     height: 75vh;
     margin-left: 32px;
@@ -297,7 +297,7 @@ MAIN BODY SECTION */
 }
 
 .Slogan-Container .description {
-    margin-top: 16px;
+    margin-top: 24px;
     color: rgb(110, 110, 110);
     font-size: 20px;
 }
@@ -357,7 +357,7 @@ ABOUT US */
             rgb(252, 247, 243));
     color: #553418;
 
-    transition: ease-in-out 750ms;
+    transition: ease-in-out var(--long-transition);
 }
 
 .AbtUs .Container:hover .TextContainer {
@@ -367,13 +367,13 @@ ABOUT US */
 
 .TextContainer h3 {
     margin: 0;
-    transition: ease-in-out 750ms;
+    transition: ease-in-out var(--long-transition);
     font-size: 18px;
 }
 
 .TextContainer p {
     margin: 0;
-    transition: ease-in-out 750ms;
+    transition: ease-in-out var(--long-transition);
     font-size: 18px;
 }
 
@@ -397,7 +397,7 @@ Coreteam */
     width: 100vw;
     /* height: 800px; activated */
     margin: -100px 0 0 -36px;
-    transition: ease-in-out 750ms;
+    transition: ease-in-out var(--long-transition);
 }
 
 #CoreTeam.active {
@@ -410,7 +410,7 @@ Coreteam */
     background-color: rgb(255, 200, 179);
     height: 60px;
     cursor: pointer;
-    transition: ease-in-out 500ms;
+    transition: ease-in-out var(--long-transition);
     margin: 0;
     width: calc(100% + 8px);
 }
@@ -421,7 +421,7 @@ Coreteam */
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     font-size: 40px;
-    transition: ease-in-out 250ms;
+    transition: ease-in-out var(--short-transition);
 }
 
 #CoreTeam #dropdownIconContainer:hover {
@@ -436,7 +436,7 @@ Coreteam */
 #CoreTeam #dropdownIconContainer:active {
     color: var(--color1);
     background-color: rgb(255, 181, 111);
-    transition: 10ms;
+    transition: var(--short-transition);
 }
 
 #CoreTeam #dropdownIconContainer.active {
@@ -475,7 +475,7 @@ Coreteam */
     position: relative;
     padding: 0 24px;
     display: none;
-    transition: ease-in-out 750ms;
+    transition: ease-in-out var(--long-transition);
     background-color: var(--memList-color);
 }
 
@@ -495,7 +495,7 @@ Coreteam */
 }
 
 #CoreTeam .coreTeamList .smolCell {
-    min-width: 15vw;
+    min-width: 10rem;
     height: 300px;
     background-color: #c48050;
     border-radius: 12px;
@@ -507,7 +507,7 @@ Coreteam */
     position: relative;
     height: 80%;
     background-color: #c48050;
-
+    overflow: hidden;
 }
 
 #CoreTeam .coreTeamList .smolCell .cellHeader img {
@@ -532,6 +532,21 @@ Coreteam */
 
 }
 
+.main.Section .largeCell {
+    height: unset;
+}
+
+.main.Section .largeCell .cellHeader {
+    display: block;
+    width: unset;
+    height: unset;
+    position: unset;
+    padding: 0.3rem 0.4rem
+}
+
+.main.Section .largeCell .cellHeader > * {
+    min-height: 315px;
+}
 
 /* OUR PJ
 OUR PJ
@@ -626,11 +641,14 @@ PODCAST */
     /*background-color: rgb(154, 196, 196);*/
     display: flex;
     flex-direction: row;
+    margin-top: 7rem;
 }
 
 
 .PodC.Section .Slogan-Container {
     /*background-color: rgb(91, 223, 161);*/
+    flex: 3;
+    /* background-color: coral; */
 }
 
 
@@ -640,8 +658,8 @@ PODCAST */
     flex-direction: column;
     margin-left: 36px;
     /*width: 45vw;*/
-    flex: 1;
-    height: 720px;
+    flex: 5;
+    /*height: 720px;*/
     justify-content: space-evenly;
 }
 
@@ -649,9 +667,14 @@ PODCAST */
     /*background-color: rgb(86, 218, 126);*/
     display: flex;
     flex-direction: row;
-    padding: 12px;
+    padding: 1.6rem;
+    background: #ebcfb7;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+
     /* margin-bottom: 12px;  */
 }
+
 
 .PodC.Section .PodcastList-Container .Pod .imgContainer {
     position: relative;
@@ -680,52 +703,293 @@ PODCAST */
 }
 
 .PodC.Section .PodcastList-Container .Pod .in4Container h3 {
-<<<<<<< Updated upstream
 
 }
 
 .music-player {
+    margin-top: 80px;
     padding: 4rem 2rem 0 2rem;
     display: flex;
     flex: 2;
     justify-content: center;
+    /* background-color: blue; */
 }
 
 .music-player > * {
 }
-=======
->>>>>>> Stashed changes
 
 .music-player .have-some-music-case {
     display: none;
 }
 
-<<<<<<< Updated upstream
 .music-player .empty-music-state {
     text-align: center;
 }
-=======
-.PodC.Section .PodcastList-Container .Pod .in4Container p {
-
-}
-
-
-
-
-
->>>>>>> Stashed changes
 
 #footer {
     position: relative;
     background-color: black;
 }
 
-@media screen and (max-width: 1510px) {
+
+/*donate popup styling*/
+.donate-popup-content-wrapper {
+    padding-top: 1rem;
+}
+
+.donate-choice-wrapper + .donate-choice-wrapper {
+    margin-top: 2rem;
+}
+
+#Podcast .Slogan-Container {
+    padding-top: 0;
+}
+
+/*change between centered and left side icon*/
+.alternative-icon {
+    display: none;
+}
+
+#MDonateBtn {
+    display: none;
+}
+
+.page-100:before {
+    display: none;
+}
+
+.top-left-side-icons {
+    position: absolute;
+}
+
+.coreTeamList {
+    /*display: flex !important;*/
+    /*flex-wrap: wrap;*/
+    /*flex-basis: 25%;*/
+}
+
+.Section {
+    display: block;
+}
+
+.main.Section .Slogan-Container {
+    height: unset;
+}
+
+#AboutUs .Slogan-Container {
+    height: unset;
+}
+
+#CoreTeam {
+    position: inherit;
+    margin-top: 0;
+}
+
+.core-member-wrapper .LSlogan {
+    color: var(--color4);
+    font-size: 48px;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 690px){
+    .core-member-wrapper .LSlogan {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+.TextContainer {
+    height: auto;
+    padding: 0;
+}
+
+.AbtUs .Container:hover .TextContainer {
+    top: -10%;
+}
+
+@media screen and (max-width: 1442px) and (min-width: 420px) {
     #header .imgContainer {
-        height: 140px;
+        height: var(--navBar-Height);
     }
 
     #header .imgContainer img {
+        display: none;
+    }
+
+    #MDonateBtn {
+        display: inline;
+    }
+
+    .page-100 {
+        display: none;
+    }
+
+    .top-left-side-icons .donate-btn {
+        display: none;
+    }
+
+    .regular-donate.donate-btn {
+        display: none;
+    }
+
+    .top-left-side-icons .alternative-icon {
+        display: block;
+    }
+
+    .alternative-icon .imgContainer {
+        justify-content: flex-start !important;
+    }
+
+    .top-left-side-icons .alternative-icon .imgContainer img {
+        display: block !important;
+        margin-left: 6rem;
+    }
+
+    .main .largeCell {
+        width: 70%;
+    }
+
+    .main.Section .Slogan-Container {
+        padding-top: 1rem;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    #OurPJ .largeCell {
+        display: none;
+    }
+
+    #OurPJ.Section .Slogan-Container {
+        width: auto;
+        height: auto;
+    }
+
+    .a100PagesDescription {
+        margin-top: 0;
+    }
+
+    #Podcast {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #Podcast .Slogan-Container {
+        flex-basis: 100%;
+        height: unset;
+    }
+
+    #Podcast .music-player {
+        flex: 1;
+    }
+
+    #Podcast .PodcastList-Container {
+        max-height: 25rem;
+        overflow: scroll;
+        justify-content: unset;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .invisible-M {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    #CoreTeam {
+        margin-top: 0rem
+    }
+}
+
+@media screen and (max-width: 870px) {
+
+    .invisible-M {
+        display: none !important;
+    }
+
+    .main.Section .Slogan-Container .LSlogan {
+        font-size: 4rem !important;
+    }
+
+    #dropdownIconContainer > i {
+        font-size: 30px;
+    }
+
+    .first-row, .second-row {
+        display: flex;
+        height: unset !important;
+    }
+
+    .smolCell {
+        min-width: unset !important;
+        height: unset !important;
+        flex-basis: 20%;
+    }
+
+    .smolCell .cellHeader {
+        position: unset !important;
+        height: unset !important;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .smolCell .cellHeader img {
+        position: unset !important;
+        transform: none !important;
+    }
+
+    .smolCell .cellContent {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #Podcast .music-player {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    #Podcast .PodcastList-Container {
+        flex: unset;
+        max-height: 13rem;
+    }
+
+    .top-left-side-icons .alternative-icon .imgContainer img {
+        margin-left: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 690px) {
+
+    .invisible-S {
         display: none !important;
     }
 }
+
+
+@media screen and (max-width: 680px) {
+
+    .smolCell {
+        flex-basis: 40%;
+    }
+
+    #CoreTeam .coreTeamList {
+        height: unset !important;
+    }
+
+    .coreTeamList.active {
+        max-height: 1200px !important;
+        padding-bottom: 5rem !important;
+        overflow: auto;
+    }
+
+}
+

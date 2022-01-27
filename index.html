@@ -12,13 +12,13 @@
     <link rel= "stylesheet" href="./Styles/home.css" />
 
     <link rel= "stylesheet" href="./Styles/home(M).css" title="M"/>
+    <link rel="icon" type="image/png" href="./Assets/favicon/favicon.ico"/>
 
-
+<!--    poup lib-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
     <style>
-
-        /* .donate.Btn {
-
-        } */
 
         #mainNav:last-child {
             margin-right: 4px;
@@ -29,10 +29,6 @@
             margin-left: 32px;
         }
 
-        /* .OurPJ.Section .largeCell-Container {
-            width: 50vw;
-        } */
-
     </style>
 
 
@@ -41,25 +37,33 @@
 
     <div id="header">
 
-        <button class="donate Btn">Donate</button>
+        <div class="top-left-side-icons">
+            <div class="alternative-icon">
+                <div class="imgContainer invisible-S">
+                    <img src="./Logos/D4.png" alt="Donation Box Foundation's Logo">
+                </div>
+            </div>
+        </div>
 
+        <button class="donate Btn regular-donate donate-btn">Donate</button>
+        <!-- <div id="DBFName_M">Donation Box Foundation</div> -->
         <i class="ti-menu" id="dropDownToggle"></i>
-        <div class="imgContainer">
+        <div class="imgContainer basic-box">
             <img src="./Logos/D4.png" alt="Donation Box Foundation's Logo">
         </div>
         <nav id="mainNav">
-            <a href="#" class="nav-links">100 TRANG</a>
-            <a href="#" class="nav-links" id="DonateBtnM">Donate</a>
-            <a href="#AboutUs" class="nav-links">About Us</a>
-            <a href="#OurPJ" class="nav-links">Our Project</a>
-            <a href="#Podcast" class="nav-links">Podcast</a>
-            <a href="#Sponsor" class="nav-links">Sponsor</a>
+            <a href="#" class="nav-links" id="MDonateBtn">Donate</a>
+            <a href="#100Pages" class="nav-links page-100">100 TRANG</a>
+            <a href="#AboutUs" class="nav-links">Về DBF</a>
+            <a href="#OurPJ" class="nav-links">Các dự án</a>
+            <a href="#Podcast" class="nav-links invisible-M">Podcast</a>
+            <a href="#Donor" class="nav-links">Người quyên góp</a>
         </nav>
 
     </div>
 
     <div id="main">
-        <div id = "100Pages" class="main Section">
+        <div id="100Pages" class="main Section">
 
             <!-- <h1>100 Trang</h1> -->
 
@@ -68,17 +72,18 @@
 
                 <div class="largeCell one">
                     <div class="cellHeader">
-                        <img src="./Logos/D4.png" alt="img">
+                        <iframe  height="315" width="100%" src="https://www.youtube.com/embed/BT7dbHMaoXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
                     <div class="cellContent">
-                        <h3>Header</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetre perspiciatis quia incidunt quos debitis, autem laboruscipit soluta facilis eaque quisquam..</p>
+                        <h3>Video hành trình phân phát các phần quà kết thúc dự án đầu tiên</h3>
+                        <p>Ủng hộ dự án qua các hình thức bên dưới:</p>
                     </div>
                     <div class="cellFooter">
                         <div class="btnContainer">
-                            <button class="Btn">Btn 0</button>
-                            <button class="Btn">Btn 1</button>
+                            <button class="Btn">Sản phẩm</button>
+                            <button class="Btn">Hiện vật</button>
+                            <button class="Btn">Hiện kim</button>
                         </div>
                     </div>
                 </div>
@@ -86,9 +91,11 @@
             </div>
 
             <div class="Slogan-Container">
-                <h3 class="SSlogan">Slogan 1 Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                <h3 class="SSlogan">Donation Box Foundation hi vọng có thể san sẻ, đồng hành cùng các em, các bạn trên con đường đến trường thông qua dự án này..</h3>
                 <h1 class="LSlogan">100 TRANG</h1>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores, possimus voluptatibus ducimus odit inventore labore aspernatur a quasi, vero eum officia natus repudiandae necessitatibus perspiciatis. Similique sit sed maxime.</p>
+                <p class="description">... Nối tiếp thành công của dự án đầu tiên, DBF cùng các nhà hảo tâm luôn mong muốn lan tỏa thêm nhiều hi vọng và cơ hội mới cho những trường hợp khó khăn "trước - trong - sau" đại dịch Covid-19.</p>
+
+                <p class="description">Đây là website chính thức của dự án; cũng được xây dựng nên từ những bạn trẻ có tâm lòng nhân ái mong muốn góp một phần sức lực để các nhà hảo tâm, đơn vị tài trợ dễ dàng đến gần với các bạn có hoàn cảnh khó khăn hơn.</p>
             </div>
 
         </div>
@@ -98,8 +105,8 @@
 
             <div class="Slogan-Container">
                 <!-- <h3 class="SSlogan">Slogan 1</h3> -->
-                <h1 class="LSlogan">About Us</h1>
-                <p class="description">Donation Box Foundation là một tổ chức thiện nguyện do các bạn học sinh THPT trong địa bàn Thành phố Hồ Chí Minh thành lập trong khoảng tháng 7 năm 2021 - khi Thành phố đang đối mặt với dịch bệnh vô cùng phức tạp. Tổ chức được thành lập với mong muốn là có thể hỗ trợ nhanh chóng đến những người gặp khó khăn trong và sau đại dịch và mong muốn có thể là cầu nối cho mọi người có thể chung tay giúp đỡ lẫn nhau sau khoảng thời gian này.</p>
+                <h1 class="LSlogan">Về dự án</h1>
+                <p class="description">Donation Box Foundation là một tổ chức thiện nguyện do các bạn học sinh THPT trong địa bàn Thành phố Hồ Chí Minh thành lập trong khoảng tháng 7 năm 2021 - khi Thành phố đang đối mặt với dịch bệnh vô cùng phức tạp. Tổ chức được thành lập với mong muốn có thể hỗ trợ nhanh chóng đến những người gặp khó khăn trong và sau đại dịch và mong muốn có thể là cầu nối cho mọi người có thể chung tay giúp đỡ lẫn nhau sau khoảng thời gian này.</p>
             </div>
 
             <div class="AbtUs Container">
@@ -121,6 +128,8 @@
 
             </div>
 
+            <!--manually adjusting uneven avatar-->
+
             <div id="CoreTeam" class="">
 
                 <div id="dropdownIconContainer" class="">
@@ -132,123 +141,114 @@
 
                     <div class="first-row">
 
-
                         <div class="smolCell first">
                             <div class="cellHeader">
-                                <img src="./Assets/Imgs/DummyImg.PNG" alt="img">
+                                <img src="./Assets/Imgs/CoreTeam/dluong-removebg-preview.png" alt="img"
+                                style="width: 138%;">
                             </div>
 
                             <div class="cellContent">
-                                <h3>Phan Hạo Nam 1</h3>
-                                <p>Head Tech-PR</p>
+                                <h3>Phan Văn Duy Lương</h3>
+                                <p>Leader</p>
                             </div>
                             <div class="quoteModal">
-                                <p class="quote">Quote này tính sau huhu, deadline dí tới đít chưa xong cái mẹ gì cả đcm</p>
+                                <p class="quote">Quote tooltips nè mà chắc để sau</p>
                             </div>
                         </div>
 
                         <div class="smolCell second">
                             <div class="cellHeader">
-                                <img src="./Assets/Imgs/DummyImg.PNG" alt="img">
+                                <img src="./Assets/Imgs/CoreTeam/dhanh-removebg-preview.png" alt="img">
                             </div>
 
                             <div class="cellContent">
-                                <h3>Phan Hạo Nam 2</h3>
-                                <p>Head Tech-PR</p>
+                                <h3>Võ Dung Hạnh</h3>
+                                <p>Vice/Head Program</p>
                             </div>
                             <div class="quoteModal">
-                                <p class="quote">Quote này tính sau huhu, deadline dí tới đít chưa xong cái mẹ gì cả đcm</p>
+                                <p class="quote">Quote tooltips nè mà chắc để sau</p>
                             </div>
                         </div>
 
                         <div class="smolCell third">
                             <div class="cellHeader">
-                                <img src="./Assets/Imgs/DummyImg.PNG" alt="img">
+                                <img src="./Assets/Imgs/CoreTeam/xtrucc-removebg-preview.png" alt="img"
+                                style="width: 90%">
                             </div>
 
                             <div class="cellContent">
-                                <h3>Phan Hạo Nam 3</h3>
-                                <p>Head Tech-PR</p>
+                                <h3>Trần Xuân Trúc</h3>
+                                <p>Vice/Head Logistic</p>
                             </div>
                             <div class="quoteModal">
-                                <p class="quote">Quote này tính sau huhu, deadline dí tới đít chưa xong cái mẹ gì cả đcm</p>
+                                <p class="quote">Quote tooltips nè mà chắc để sau</p>
                             </div>
                         </div>
 
-                        <div class="smolCell fourth decoyM">
-                            <div class="cellHeader">
-                                <img src="./Assets/Imgs/DummyImg.PNG" alt="img">
-                            </div>
 
-                            <div class="cellContent">
-                                <h3>Phan Hạo Nam 4 Decoy</h3>
-                                <p>Head Tech-PR</p>
-                            </div>
-                            <div class="quoteModal">
-                                <p class="quote">Quote này tính sau huhu, deadline dí tới đít chưa xong cái mẹ gì cả đcm</p>
-                            </div>
-                        </div>
 
                     </div>
 
                     <div class="second-row">
+                        <div class="smolCell fourth decoyM">
+                            <div class="cellHeader">
+                                <img src="./Assets/Imgs/CoreTeam/dquin-removebg-preview.png" alt="img"
+                                     style="width: 60%;">
+                            </div>
+
+                            <div class="cellContent">
+                                <h3>Phạm Hồng Diễm Quyên</h3>
+                                <p>Head Foreign Relations</p>
+                            </div>
+                            <div class="quoteModal">
+                                <p class="quote">Quote tooltips nè mà chắc để sau</p>
+                            </div>
+                        </div>
 
 
                         <div class="smolCell fourth true">
                             <div class="cellHeader">
-                                <img src="./Assets/Imgs/DummyImg.PNG" alt="img">
+                                <img src="./Assets/Imgs/CoreTeam/image-removebg-preview.png" alt="img"
+                                style="width: 56%;top: 62%;">
                             </div>
 
                             <div class="cellContent">
-                                <h3>Phan Hạo Nam 4</h3>
+                                <h3>Nguyễn Thu Ngân</h3>
                                 <p>Head Tech-PR</p>
                             </div>
                             <div class="quoteModal">
-                                <p class="quote">Quote này tính sau huhu, deadline dí tới đít chưa xong cái mẹ gì cả đcm</p>
+                                <p class="quote">Quote tooltips nè mà chắc để sau</p>
                             </div>
                         </div>
 
                         <div class="smolCell fifth">
                             <div class="cellHeader">
-                                <img src="./Assets/Imgs/DummyImg.PNG" alt="img">
+                                <img src="./Assets/Imgs/CoreTeam/hnamm-removebg-preview.png" alt="img"
+                                style="width: 124%;top: 43%;">
                             </div>
 
                             <div class="cellContent">
-                                <h3>Phan Hạo Nam 5</h3>
+                                <h3>Phan Hạo Nam</h3>
                                 <p>Head Tech-PR</p>
                             </div>
                             <div class="quoteModal">
-                                <p class="quote">Quote này tính sau huhu, deadline dí tới đít chưa xong cái mẹ gì cả đcm</p>
+                                <p class="quote">Quote tooltips nè mà chắc để sau</p>
                             </div>
                         </div>
                         <div class="smolCell sixth">
                             <div class="cellHeader">
-                                <img src="./Assets/Imgs/DummyImg.PNG" alt="img">
+                                <img src="./Assets/Imgs/CoreTeam/Alex-removebg-preview.png" alt="img"
+                                style="width: 63%;top: 54%;">
                             </div>
 
                             <div class="cellContent">
-                                <h3>Phan Hạo Nam 6</h3>
-                                <p>Head Tech-PR</p>
+                                <h3>Nguyễn Lê Minh Trang</h3>
+                                <p>Head Human Resource</p>
                             </div>
                             <div class="quoteModal">
-                                <p class="quote">Quote này tính sau huhu, deadline dí tới đít chưa xong cái mẹ gì cả đcm</p>
+                                <p class="quote">Quote tooltips nè mà chắc để sau</p>
                             </div>
                         </div>
-                        <div class="smolCell seventh">
-                            <div class="cellHeader">
-                                <img src="./Assets/Imgs/DummyImg.PNG" alt="img">
-                            </div>
-
-                            <div class="cellContent">
-                                <h3>Phan Hạo Nam 7</h3>
-                                <p>Head Tech-PR</p>
-                            </div>
-                            <div class="quoteModal">
-                                <p class="quote">Quote này tính sau huhu, deadline dí tới đít chưa xong cái mẹ gì cả đcm</p>
-                            </div>
-                        </div>
-
-
                     </div>
 
                 </div>
@@ -280,6 +280,9 @@
 
             </div>
 
+<div class="core-member-wrapper">
+    <h1 class="LSlogan">Dự án "100 Trang"</h1>
+
             <div class="a100PagesDescription">
                 <div class="cell first">
                     <h2 class="title">LÝ DO TRIỂN KHAI DỰ ÁN</h2>
@@ -305,6 +308,8 @@
                     <p>Trên toàn địa bàn thành phố Hồ Chí Minh.</p>
                 </div>
             </div>
+</div>
+
 
         </div>
 
@@ -313,23 +318,28 @@
             <div class="Slogan-Container">
                 <h1 class="LSlogan">Podcast.</h1>
                 <div class="description">
-                    <p>Tóm tắt dự án đầu tiên: </p>
-                    <p>Dự án đầu tiên của tổ chức được triển khai vào tháng 8 năm 2021 với số tiền dự kiến ban đầu là 20,000,000 VND. Với đối tượng nhắm đến là những lao động mất việc do dịch bệnh,người vô gia cư, và công nhân vệ sinh. Sau hơn 2 tháng quy động quyên góp, số tiền nhận được đã cán mốc 22,000,000 VND, tức đạt 110% so với mục tiêu ban đầu. Dựa vào số tiền mục tiêu, 100 phần nhu yếu phẩm, được trao tận tay cho những hộ gia đình khó khăn ở thành phố Thủ Đức.</p>
+                    <p>Có lẽ mọi người cũng đã quen thuộc với hình ảnh một dự án thiện nguyện chỉ toàn đăng những bài cập nhật số liệu của đợt gây quỹ rồi, vậy nên Donation Box Foundation đã quyết tâm thổi một làn gió mới vào dự án và hứa hẹn sẽ không làm mọi người thất vọng đâu đó nha. </p>
+                    <br>
+                    <p>Trong không khí của mùa giáng sinh năm 2021, “HỘP” đã chuẩn bị một phần quà để gửi tặng các bạn - đó chính là một podcast series mang tên “BOXCAST”.</p> 
+                    <br>
+                    <p>Chắc hẳn bạn nào tinh ý sẽ nhận ra ngay “BOXCAST” được hình thành từ “Box” trong Donation Box Foundation và từ “Cast” trong podcast đúng không nè ^^.</p>
+                </div>
+
+                <div class="music-player">
+                    <div class="empty-music-state">Nghe "Box"casts ở dưới này nhé!</div>
+                    <div class="have-some-music-case">
+                        <div class="current-image-music">
+                            smth img
+                        </div>
+    
+                        <div class="music-controller">
+                            smth ctrl
+                        </div>
+                   </div>
                 </div>
             </div>
 
-            <div class="music-player">
-                <div class="empty-music-state">Choose something to play</div>
-                <div class="have-some-music-case">
-                    <div class="current-image-music">
-                        smth img
-                    </div>
-
-                    <div class="music-controller">
-                        smth ctrl
-                    </div>
-               </div>
-            </div>
+            
 
             <div class="PodcastList-Container">
 
@@ -341,12 +351,14 @@
                     </div>
 
                     <div class="in4Container">
-                        <h3 class="title">Podcast 1</h3>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, similique?</p>
+                        <h3 class="title">MÙA ĐÔNG ẤM</h3>
+                        <p class="description">".. Bạn biết không? Nhờ dịch bệnh mà ta mới biết giữ gìn và chăm sóc của mình nhiều hơn. Nhờ dịch bệnh mà ta mới biết trân quý những phút giây quây quần đầm ấm bên những người thân yêu. Nhờ dịch bệnh mà ta mới biết, hoá ra con người yêu thương nhau đến nhường nào…"</p>
+                        <p>🎤 Người dẫn: Tịnh Thi</p>
+                        <p>🎙  Khách mời: Chi Mai</p>
+                        <p>📝 Biên tập: Ban TECH - PR</p>
                     </div>
 
                 </div>
-
 
                 <div class="Pod second">
 
@@ -355,46 +367,69 @@
                     </div>
 
                     <div class="in4Container">
-                        <h3 class="title">Podcast 2</h3>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, similique?</p>
+                        <h3 class="title">VỚI BẠN, TỪ THIỆN “TRÔNG” NHƯ THẾ NÀO?</h3>
+                        <p class="description">Đoạn chữ: “Nhạy cảm”? Có thật sự các hoạt động thiện nguyện luôn là chủ đề “nhạy cảm” không? Hay do chính chúng ta nhìn nhận sự việc dưới góc độ “nhạy cảm”?</p>
+                        <p>Cùng “HỘP” và khách mời số phát sóng này bàn luận về các dấu hỏi trong số phát sóng lần thứ ba này ngay nhé!</p>
+                        <p>Nếu chưa, số BOXCAST này chính là dành cho bạn! </p>
+                        <p>🎤 Người dẫn: Tịnh Thi</p>
+                        <p>🎙  Khách mời: Chi Mai</p>
+                        <p>📝 Biên tập: Ban TECH - PR</p>
                     </div>
 
                 </div>
 
 
-                <div class="Pod first">
+                <div class="Pod third">
 
                     <div class="imgContainer">
                         <img src="./Assets/Imgs/PodC3.png" alt="Podcast 1(Green) IMG">
                     </div>
 
                     <div class="in4Container">
-                        <h3 class="title">Podcast 3</h3>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, similique?</p>
+                        <h3 class="title">VÌ SAO TỪ THIỆN LẠI NHẠY CẢM? </h3>
+                        <p class="description">Đoạn chữ: “Nhạy cảm”? Có thật sự các hoạt động thiện nguyện luôn là chủ đề “nhạy cảm” không?</p>
+                        <p>Hay do chính chúng ta nhìn nhận sự việc dưới góc độ “nhạy cảm”?</p>
+                        <p>Cùng “HỘP” và khách mời số phát sóng này bàn luận về các dấu hỏi trong số phát sóng lần thứ ba này ngay nhé!</p>
+                        <p>🎤 Người dẫn: Phương Quỳnh</p>
+                        <p>🎙  Khách mời: Khắc Toàn</p>
+                        <p>📝 Biên tập: Ban TECH - PR</p>
                     </div>
 
                 </div>
 
 
 
-                <div class="Pod first">
+                <div class="Pod fourth">
 
                     <div class="imgContainer">
                         <img src="./Assets/Imgs/PodC4.png" alt="Podcast 1(Green) IMG">
                     </div>
 
                     <div class="in4Container">
-                        <h3 class="title">Podcast 4</h3>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, similique?</p>
+                        <h3 class="title">TẬP ĐẶC BIỆT - SỨC TRẺ DẪN LỐI TRÁI TIM</h3>
+                        <p class="description">Đoạn chữ: "..Đặc biệt hơn cả, bởi tạm gác lại những câu chuyện xã hội vô thưởng vô phạt, HỘP tự tình lại cuộc hành trình vừa qua.</p> 
+                        <p>Kể lại những góc nhìn khác trong hành trình đi làm từ thiện, những cảm xúc, những câu chuyện đến từ các bạn trẻ đã sinh ra HỘP.."</p>
+                        <p>🎤 Người dẫn: Dung Hạnh</p>
+                        <p>🎙  Khách mời: Duy Lương - Thu Ngân</p>
+                        <p>📝 Biên tập: Ban TECH - PR</p>
                     </div>
 
                 </div>
             </div>
         </div>
 
-        <div id="Sponsor" class="Sponsor Section">
-            <!-- <h1>Sponsor</h1> -->
+        <div id="Donor" class="Donor Section">
+            <h1>Người quyên góp</h1>
+            <div class="donor-List">
+                <p>Donor 1</p>
+                <p>Donor 1</p>
+                <p>Donor 1</p>
+                <p>Donor 1</p>
+                <p>Donor 1</p>
+                <p>Donor 1</p>
+                <p>Donor 1</p>
 
+            </div>
 
         </div>
     </div>
@@ -402,7 +437,11 @@
     <div id="footer">
 
     </div>
+    <script src= "./Js/utils.js" defer> </script>
 
     <script src= "./Js/home.js"> </script>
+    <script src= "./Js/donationPopupLogic.js" defer> </script>
+    <script src= "./Js/memberIntroTooltipLogic.js" defer> </script>
+
 </body>
 </html>

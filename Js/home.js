@@ -70,23 +70,82 @@ function remClass(e, c) {
 var mapPodToContent = {
     'Pod first': (
         `<div>
-            <iframe width="100%" height="300" scrolling="no" frameBorder="no" allow="autoplay"
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/950722921&color=%23740c10&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"/>
-            <div
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1176501691&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            
+            </iframe>
+
+            <div 
+
                 style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/cattymayer-art" title="菲然" target="_blank"
-                   style="color: #cccccc; text-decoration: none;">菲然</a> · <a
-                href="https://soundcloud.com/cattymayer-art/ice-paper-jade-pieces" title="Ice Paper - 双鱼玉佩"
-                target="_blank"
-                style="color: #cccccc; text-decoration: none;">Ice Paper - 双鱼玉佩</a>
+
+                <a href="https://soundcloud.com/donation-box-foundation" title="Donation Box Foundation" target="_blank" style="color: #cccccc; text-decoration: none;">Donation Box Foundation</a> · 
+                <a href="https://soundcloud.com/donation-box-foundation/boxcast_01-mua-dong-am" title="[BOXCAST_01] - MÙA ĐÔNG “ẤM”" target="_blank" style="color: #cccccc; text-decoration: none;">[BOXCAST_01] - MÙA ĐÔNG “ẤM”</a>
+                
             </div>
         </div>
         `
     ),
+
     'Pod second': (
         `<div>
-            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1009508287&color=%23740c10&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/princessgypsophila" title=". 안개꽃.✿❀❁" target="_blank" style="color: #cccccc; text-decoration: none;">. 안개꽃.✿❀❁</a> · <a href="https://soundcloud.com/princessgypsophila/franky-ming-yue-xing-he" title="Franky (弗兰奇) - 明月星河(Ming Yue Xing He)" target="_blank" style="color: #cccccc; text-decoration: none;">Franky (弗兰奇) - 明月星河(Ming Yue Xing He)</a></div>
-        </div>`
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1180162006&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            
+            </iframe>
+
+            <div 
+
+                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+
+                <a href="https://soundcloud.com/donation-box-foundation" title="Donation Box Foundation" target="_blank" style="color: #cccccc; text-decoration: none;">Donation Box Foundation</a> · 
+                <a href="https://soundcloud.com/donation-box-foundation/ep2-voi-ban-tu-thien-trong-nhu-the-nao" title="[BOXCAST_02] - Với Bạn Từ Thiện &quot;Trông&quot; Như Thế Nào?" target="_blank" style="color: #cccccc; text-decoration: none;">[BOXCAST_02] - Với Bạn Từ Thiện &quot;Trông&quot; Như Thế Nào?</a>
+                
+            </div>
+        </div>
+        `
+    ),
+
+    'Pod third': (
+        `<div>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1184779063&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            
+            </iframe>
+
+            <div 
+
+                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+
+                <a href="https://soundcloud.com/donation-box-foundation" title="Donation Box Foundation" target="_blank" style="color: #cccccc; text-decoration: none;">Donation Box Foundation</a> · 
+                <a href="https://soundcloud.com/donation-box-foundation/boxcast_03-vi-sao-tu-thien-lai-nhay-cam" title="[BOXCAST_03] - VÌ SAO TỪ THIỆN LẠI NHẠY CẢM?" target="_blank" style="color: #cccccc; text-decoration: none;">[BOXCAST_03] - VÌ SAO TỪ THIỆN LẠI NHẠY CẢM?</a>
+                
+            </div>
+
+        </div>
+        `
+    ),
+
+    'Pod fourth': (
+        `<div>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1184779063&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            
+            </iframe>
+
+            <div 
+                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+
+                <a href="https://soundcloud.com/donation-box-foundation" title="Donation Box Foundation" target="_blank" style="color: #cccccc; text-decoration: none;">Donation Box Foundation</a> · 
+                <a href="https://soundcloud.com/donation-box-foundation/boxcast_03-vi-sao-tu-thien-lai-nhay-cam" title="[BOXCAST_03] - VÌ SAO TỪ THIỆN LẠI NHẠY CẢM?" target="_blank" style="color: #cccccc; text-decoration: none;">[BOXCAST_03] - VÌ SAO TỪ THIỆN LẠI NHẠY CẢM?</a>
+                
+            </div>
+        </div>
+        `
     )
 }
 
@@ -104,6 +163,10 @@ if (playlistDisplayer) {
                 console.log(e.className, targetMusic)
                 if (targetMusic) {
                     realPlayer.innerHTML = targetMusic
+                } else {
+                    player.querySelector('.empty-music-state').style.setProperty('display', 'block')
+                    realPlayer.style.setProperty('display', 'none')
+                    player.querySelector('.empty-music-state').innerHTML = 'Podcast not available'
                 }
             })
         }

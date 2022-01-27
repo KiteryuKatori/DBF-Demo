@@ -1,23 +1,44 @@
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 690px) {
 
-    #header {
-        
+    .alternative-icon .imgContainer img {
+        display: none !important;
     }
 
+    #header {
+        background-color: #fff;
+        height: 82px;
+    }
+
+    /* #DBFName_M {
+        position: absolute;
+        display: block;
+        color: var(--color4);
+        font-size: 24px;
+        font-weight: 800;
+        padding: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        /* background-color: darkblue; */
     #header .imgContainer {
         position: absolute;
         z-index: 50;
         top: 80%;
-        left: 15%;
-        transform: translateX(-50%)  translateY(-50%);
+        left: 1.25%;
+        transform: translateY(-50%);
         margin-left: 0px;
-        height: 160px;
-        width: 160px;
+        height: 100px;
+        width: 100px;
+        background-color: #fff !important;
     }
 
     #header .imgContainer img {
-        width: 180px;
-        height: 192px;
+        width: 128px;
+        height: 136px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-47.5%) translateY(-50%);
     }
 
     #mainNav {
@@ -28,50 +49,38 @@
         text-align: right;
     }
 
-    #mainNav.active {display: flex}
+    #mainNav.active {
+        display: flex
+    }
 
     #header #mainNav a {
-        padding: 12px 24px 12px 48px;
+        margin: 0px 20px -1px 0px;
+        padding: 12px 30px 12px 48px;
         background-color: var(--idk1);
         font-size: 28px;
         width: calc(100vw + 32px);
 
     }
 
-    #DonateBtnM {
-        display: block;
-    }
-
-    #mainNav a:before {
-        content: "|";
-        position: absolute;
-        top: -4px !important;
-        right: 12px !important;
-        padding: 12px 0;
-        font-weight: bolder !important;
-        font-size: 32px !important;
+    #header #mainNav a:before,
+    #header #mainNav a:first-child:before {
+        display: none;
     }
 
     #mainNav a:hover {
-        padding-right: 52px !important;
+        padding-right: 48px !important;
     }
 
-    #mainNav a:hover:before, 
-    #mainNav a:first-child::before {
-        color: var(--color1) !important;
-        padding-right: 24px !important;
-    }
-    
     #header #dropDownToggle.ti-menu {
         position: absolute;
         display: block;
         color: var(--color4);
         top: 50%;
         right: 24px;
-        transform: translateY(-56%);
+        transform: translateY(-50%);
         font-size: 40px;
     }
-    
+
     #header button {
         display: none;
     }
@@ -84,16 +93,14 @@
     COMMON STYLES
     COMMON STYLES
      */
-
     .Section {
         margin: 48px 0;
         padding: 24px 4px;
     }
-    
+
     .Section > h1 {
         font-size: 48px;
     }
-
 
 
     .Slogan-Container {
@@ -107,20 +114,19 @@
     .Slogan-Container .SSlogan {
         color: var(--color2);
     }
-    
+
     .Slogan-Container .LSlogan {
         color: var(--color4);
         font-size: 48px;
-        text-align: center; 
+        text-align: center;
     }
-    
+
     .Slogan-Container .description {
         margin-top: 16px;
         color: rgb(99, 94, 90);
         font-size: 20px;
         padding: 0 16px;
     }
-
 
 
     .largeCell-Container {
@@ -130,7 +136,7 @@
         margin-left: -4px;
         /* background-color: blue; */
     }
-    
+
     .largeCell {
         position: relative;
         margin: auto;
@@ -141,7 +147,6 @@
         overflow: hidden;
         box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.5);
     }
-
 
 
     .Btn {
@@ -163,11 +168,9 @@
     COMMON STYLES END
     COMMON STYLES END
      */
-
     /* A100PAGEs SECTION
     A100PAGEs SECTION
     A100PAGEs SECTION */
-
     .main.Section {
         display: flex;
         flex-direction: column-reverse;
@@ -184,7 +187,6 @@
     /* AbtUs SECTION
     AbtUs SECTION
     AbtUs SECTION */
-    
     .AbtUs.Container {
         position: relative;
         display: block;
@@ -200,10 +202,6 @@
         width: 100vw;
     }
 
-    .AbtUs.Container .imgContainer img {
-        width: 680px;
-    }
-
     .AbtUs.Container .TextContainer {
         top: 0;
         opacity: 1;
@@ -211,9 +209,9 @@
         padding: 12px 24px;
 
         background: linear-gradient(
-        to bottom, 
-        rgba(255, 245, 235, 0.6), 20%,
-        rgb(252, 247, 243, 0.8), 80%, rgba(255, 245, 235, 0.6));
+                to bottom,
+                rgba(255, 245, 235, 0.6), 20%,
+                rgb(252, 247, 243, 0.8), 80%, rgba(255, 245, 235, 0.6));
 
         color: #553418;
     }
@@ -228,7 +226,7 @@
         font-size: 20px;
         margin-bottom: 16px;
     }
-    
+
     .TextContainer p {
         margin: 0;
         transition: ease-in-out 750ms;
@@ -239,7 +237,6 @@
     /* AbtUs SECTION BUT THIS IS ABOUT CORETEAM
     AbtUs SECTION BUT THIS IS ABOUT CORETEAM
     AbtUs SECTION BUT THIS IS ABOUT CORETEAM*/
-
     #CoreTeam {
         position: relative;
         /* background-color: rgb(110, 159, 252); */
@@ -248,12 +245,18 @@
         width: 100vw;
         margin: 0;
     }
-    
-    #CoreTeam.active {
-        height: 1200px; 
-        /* activated */
+
+    #CoreTeam {
+        margin-top: 0;
     }
-    
+
+    #CoreTeam.active {
+        /*height: 1200px;*/
+        /* activated */
+        overflow: auto;
+        padding-bottom: 1rem;
+    }
+
     #CoreTeam #dropdownIconContainer {
         position: relative;
         background-color: rgb(255, 200, 179);
@@ -261,7 +264,7 @@
         cursor: pointer;
         margin: 0 0 0 -4px;
     }
-    
+
     #CoreTeam #dropdownIconContainer i {
         font-size: 36px;
     }
@@ -308,6 +311,9 @@
         width: 40vw;
         height: 240px;
         margin-top: 24px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         /* background-color: rgb(111, 252, 98); */
     }
 
@@ -316,7 +322,7 @@
     } */
 
     #CoreTeam .coreTeamList .smolCell .cellHeader {
-        height: 75%;   
+        height: 75%;
     }
 
     #CoreTeam .coreTeamList .smolCell .cellContent {
@@ -332,7 +338,6 @@
     .OurPJ.Section
     .OurPJ.Section
     .OurPJ.Section*/
-
     .OurPJ.Section {
         /* background-color: aliceblue; */
         margin-top: -60px;
@@ -360,7 +365,7 @@
         /* background: rgb(159, 159, 240); */
         display: flex;
         flex-direction: column;
-        margin-top: 48px;
+        margin-top: 0;
     }
 
     .a100PagesDescription .cell {
@@ -385,11 +390,128 @@
         margin: 0 0 8px 24px;
     }
 
-    
+    .AbtUs.Container {
+        height: unset;
+    }
+
+    .PodC.Section {
+        margin-top: 3rem;
+    }
+
+    #header .imgContainer {
+        transform: translateY(-75%);
+    }
+
+    #dropDownToggle {
+        margin-top: 0;
+    }
+
+    #header .basic-box img {
+        height: 6rem;
+        width: auto;
+        margin-top: 0.25rem;
+    }
+
+    #header #mainNav {
+        transform: translateY(-69%);
+    }
+
+    .AbtUs.Container .imgContainer, .AbtUs.Container .imgContainer img {
+        width: 100%;
+    }
+
+    #header {
+        width: 100%;
+    }
+
+    #main, #footer {
+        overflow-x: hidden;
+    }
+
+    :root {
+        --navBar-Height: 35px;
+    }
+
+    .main.Section .largeCell .cellHeader > * {
+        /*width: 100%;*/
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+    .AbtUs.Container {
+        height: 5rem;
+    }
+
+    .PodC.Section .PodcastList-Container {
+        margin-right: 36px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .a100PagesDescription .cell {
+        margin-bottom: 1rem;
+    }
+
+    .a100PagesDescription .cell .title {
+        margin-top: 1.5rem;
+    }
+
+    .PodC.Section {
+        margin-top: 0;
+    }
+
+    #OurPJ {
+        margin-bottom: 0;
+    }
+
+    #OurPJ .largeCell-Container {
+        display: none;
+    }
+
+    .PodC.Section .Slogan-Container {
+
+    }
+
+    #CoreTeam .coreTeamList .smolCell .cellHeader img {
+        height: 12rem;
+        width: auto !important;
+    }
 
 }
 
-/* Super Idol de xiao rong
-Dou mei ni de chieng
- */
-  
+@media screen and (max-width: 465px) {
+
+    .AbtUs.Container {
+        height: 5rem;
+    }
+}
+
+@media screen and (max-width: 406px) {
+
+    .AbtUs.Container {
+        height: 8rem;
+    }
+}
+
+
+@media screen and (max-width: 390px) {
+
+    .AbtUs.Container {
+        height: 11rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .AbtUs.Container {
+        height: 14rem;
+    }
+
+    .PodC.Section .PodcastList-Container {
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+    }
+}
