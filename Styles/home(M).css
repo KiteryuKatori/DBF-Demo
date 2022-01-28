@@ -1,5 +1,9 @@
 @media screen and (max-width: 690px) {
 
+    :root {
+        --navBar-Height: 35px;
+    }
+
     .alternative-icon .imgContainer img {
         display: none !important;
     }
@@ -42,7 +46,7 @@
     }
 
     #mainNav {
-        top: 292px !important;
+        top: 288px !important;
         flex-direction: column;
         left: -24px;
         display: none;
@@ -402,6 +406,14 @@
         margin-top: 3rem;
     }
 
+    .PodC.Section .PodcastList-Container .Pod {
+        flex-direction: column;
+    }
+
+    .PodC.Section .PodcastList-Container .Pod .imgContainer {
+        flex: auto;
+    }
+
     #header .imgContainer {
         transform: translateY(-75%);
     }
@@ -430,10 +442,6 @@
 
     #main, #footer {
         overflow-x: hidden;
-    }
-
-    :root {
-        --navBar-Height: 35px;
     }
 
     .main.Section .largeCell .cellHeader > * {

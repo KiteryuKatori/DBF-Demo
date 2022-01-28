@@ -1,6 +1,7 @@
 var donateMap = {
     'food': 'https://docs.google.com/forms/d/e/1FAIpQLSc3WY-BjoQ2Zm25B614VXc5nvUJ5MJagWbKpYhQSZQq9LP_Zg/viewform',
-    'stuff': 'https://docs.google.com/forms/d/e/1FAIpQLSdAZYpbaZLUzqZf4aE2lxzQpLKKbqSOvTNko2B_CsoWFJgseQ/viewform'
+    'stuff': 'https://docs.google.com/forms/d/e/1FAIpQLSdAZYpbaZLUzqZf4aE2lxzQpLKKbqSOvTNko2B_CsoWFJgseQ/viewform',
+    'cash': 'https://docs.google.com/forms/d/e/1FAIpQLSdXknCJFxLNIHMJl1RnErDMPZOeT-8FnJhgpssGL9iMLmeorQ/viewform'
 }
 var donateRedirection = (val) => {
     // console.log('Hello', val)

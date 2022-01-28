@@ -688,15 +688,16 @@ PODCAST */
     margin-right: 12px;
     overflow: hidden;
     width: 240px;
-    height: 100px;
+    height: 180px;
     /* background-color: #c48050; */
     cursor: pointer;
     flex: 1;
+    display: block;
 }
 
 .PodC.Section .PodcastList-Container .Pod .imgContainer img {
     position: absolute;
-    height: 100px;
+    height: 180px;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -707,7 +708,7 @@ PODCAST */
     color: var(--color4);
     /* vertical-align: center; */
     /* bottom: 0; */
-    padding-top: 8px;
+    padding-top: 16px;
     flex: 2;
 }
 

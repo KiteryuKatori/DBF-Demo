@@ -133,7 +133,7 @@ var mapPodToContent = {
         `<div>
             <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
 
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1184779063&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1187930536&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
             
             </iframe>
 
@@ -141,11 +141,13 @@ var mapPodToContent = {
                 style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
 
                 <a href="https://soundcloud.com/donation-box-foundation" title="Donation Box Foundation" target="_blank" style="color: #cccccc; text-decoration: none;">Donation Box Foundation</a> · 
-                <a href="https://soundcloud.com/donation-box-foundation/boxcast_03-vi-sao-tu-thien-lai-nhay-cam" title="[BOXCAST_03] - VÌ SAO TỪ THIỆN LẠI NHẠY CẢM?" target="_blank" style="color: #cccccc; text-decoration: none;">[BOXCAST_03] - VÌ SAO TỪ THIỆN LẠI NHẠY CẢM?</a>
+
+                <a href="https://soundcloud.com/donation-box-foundation/special-ep4-suc-tre-dan-loi-trai-tim" title="Special EP.4 Sức Trẻ Dẫn Lối Trái Tim" target="_blank" style="color: #cccccc; text-decoration: none;">Special EP.4 Sức Trẻ Dẫn Lối Trái Tim</a>
                 
             </div>
         </div>
         `
+
     )
 }
 
@@ -160,7 +162,7 @@ if (playlistDisplayer) {
                 const realPlayer = player.querySelector('.have-some-music-case')
                 realPlayer.style.setProperty('display', 'block')
                 const targetMusic = mapPodToContent[e.className]
-                console.log(e.className, targetMusic)
+                // console.log(e.className, targetMusic)
                 if (targetMusic) {
                     realPlayer.innerHTML = targetMusic
                 } else {
