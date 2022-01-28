@@ -3,11 +3,11 @@ var donateMap = {
     'stuff': 'https://docs.google.com/forms/d/e/1FAIpQLSdAZYpbaZLUzqZf4aE2lxzQpLKKbqSOvTNko2B_CsoWFJgseQ/viewform'
 }
 var donateRedirection = (val) => {
-    console.log('Hello', val)
+    // console.log('Hello', val)
     window.open(donateMap[val]).focus()
 }
 
-var popupContent = `
+var popupDonationContent = `
 <div class="donate-popup-content-wrapper">
     <div class="donate-choice-wrapper">
         <button class="Btn donate-choice" onclick="donateRedirection('food')">Sản phẩm</button>
@@ -25,7 +25,7 @@ function popDonation() {
     Swal.fire({
         // title: '<strong>HTML <u>example</u></strong>',
         // icon: 'info',
-        html: popupContent,
+        html: popupDonationContent,
         showCloseButton: true,
         allowOutsideClick: true,
         focusConfirm: false,
