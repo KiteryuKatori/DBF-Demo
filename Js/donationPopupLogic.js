@@ -30,6 +30,7 @@ function popDonation() {
         showCloseButton: true,
         allowOutsideClick: true,
         focusConfirm: false,
+        showConfirmButton: false,
         confirmButtonText:
             '<i class="fa fa-thumbs-up"></i> Great!',
         confirmButtonAriaLabel: 'Thumbs up, great!',
