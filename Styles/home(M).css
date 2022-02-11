@@ -351,6 +351,12 @@
         margin-top: -60px;
     }
 
+    .OurPJ.Section .Slogan-Container,
+    .OurPJ.Section .largeCell-Container,
+    .OurPJ.Section .largeCell {
+        margin: 0px;
+    }
+
     .OurPJ.Section .Slogan-Container .description p {
         margin-bottom: 16px;
         /* background-color: violet; */
@@ -365,8 +371,17 @@
 
     .OurPJ.Section .largeCell-Container {
         /* background-color: darkgray; */
+        display: block;
         margin-left: 0;
-        width: 100vw;
+        width: 90vw;
+    }
+
+    .OurPJ.Section .largeCell-Container .largeCell {
+        /* background-color: darkgray; */
+        display: block;
+        margin-left: 0;
+        width: calc(100vw - 8px);
+        height: 280px;
     }
 
     .a100PagesDescription {
@@ -524,7 +539,7 @@
     }
 
     #OurPJ .largeCell-Container {
-        display: none;
+        
     }
 
     .PodC.Section .Slogan-Container {

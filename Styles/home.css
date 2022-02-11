@@ -307,11 +307,32 @@ MAIN BODY SECTION */
     font-size: 20px;
 }
 
+
+.main.Section .LogosContainer {
+    background-color:rgb(159, 235, 197);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main.Section .LogosContainer img {
+    height: 100px;
+    background-color: #c48050;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 0 12px;
+    flex: 1;
+}
+
+
 /* COMMON STYLES */
 
 .main.Section .Slogan-Container .LSlogan {
     font-size: 100px;
 }
+
+
+
 
 /* FINISH MAIN SECTION */
 
@@ -570,8 +591,12 @@ OUR PJ  */
 
 .OurPJ.Section .largeCell-Container {
     /* background-color: darkgray; */
-    margin-left: 40px;
     width: 40vw;
+}
+
+.OurPJ.Section .largeCell-Container .largeCell {
+    width: 110%;
+    height: 476px;
 }
 
 .OurPJ.Section .largeCell-Container .cellHeader {
@@ -583,6 +608,7 @@ OUR PJ  */
     /* background-color: violet; */
     line-height: 32px;
 }
+
 
 
 .a100PagesDescription {
@@ -864,7 +890,7 @@ PODCAST */
 
 @media screen and (max-width: 1160px) {
     #OurPJ .largeCell {
-        display: none;
+        
     }
 
     #OurPJ.Section .Slogan-Container {
