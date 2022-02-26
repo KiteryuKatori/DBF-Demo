@@ -427,7 +427,7 @@ Coreteam */
 }
 
 #CoreTeam.active {
-    height: 800px;
+    height: 960px;
     /* activated */
 }
 
@@ -499,7 +499,8 @@ Coreteam */
 
 #CoreTeam .coreTeamList {
     position: relative;
-    padding: 0 24px;
+    padding: 12px;
+    padding-top: 48px;
     display: none;
     transition: ease-in-out var(--extra-long-transition);
     background-color: var(--memList-color);
@@ -513,16 +514,15 @@ Coreteam */
 #CoreTeam .coreTeamList .second-row {
     /* background-color: rgb(255, 203, 136); */
     /* display: none; */
-    height: 360px;
-    padding: 36px 0px 8px 0;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 #CoreTeam .coreTeamList .smolCell {
-    min-width: 10rem;
-    height: 300px;
+    flex-basis: 280px; 
+    height: 360px;
     background-color: #c48050;
     border-radius: 12px;
     overflow: hidden;
@@ -597,6 +597,8 @@ OUR PJ  */
 .OurPJ.Section .largeCell-Container .largeCell {
     width: 110%;
     height: 476px;
+    max-width: 675px;
+    min-width: 540px;
 }
 
 .OurPJ.Section .largeCell-Container .cellHeader {
