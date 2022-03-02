@@ -281,6 +281,22 @@ MAIN BODY SECTION */
     margin-left: 24px
 }
 
+.main.Section .largeCell {
+    height: unset;
+}
+
+.main.Section .largeCell .cellHeader {
+    padding: 8px;
+    padding-bottom: 3px;
+}
+
+.main.Section .largeCell .cellHeader iframe {
+    min-height: 320px;
+    width: 305px;
+    border-radius: 32px 32px 0px 0px;
+}
+
+
 .Slogan-Container {
     display: inline-block;
     width: 40vw;
@@ -556,22 +572,6 @@ Coreteam */
 
 #CoreTeam .coreTeamList .smolCell .quoteModal p.quote {
 
-}
-
-.main.Section .largeCell {
-    height: unset;
-}
-
-.main.Section .largeCell .cellHeader {
-    display: block;
-    width: unset;
-    height: unset;
-    position: unset;
-    padding: 0.3rem 0.4rem
-}
-
-.main.Section .largeCell .cellHeader > * {
-    min-height: 315px;
 }
 
 /* OUR PJ
@@ -881,7 +881,7 @@ PODCAST */
     }
 
     .main .largeCell {
-        width: 70%;
+        width: 320px;
     }
 
     .main.Section .Slogan-Container {
