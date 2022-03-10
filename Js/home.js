@@ -36,6 +36,22 @@ function remClass(e, c) {
     e.classList.remove(c);
 }
 
+// toggleMenuDropdown.onclick = function() {
+//     toggleMenuDropdown.classList.toggle('active');
+//     navBar.classList.toggle('active');
+//     console.log("toggle= ", toggleMenuDropdown.classList);
+//     console.log("navBar= ", navBar.classList);
+//  }
+ 
+//  navBtn.forEach(btn => {
+//     btn.onclick = function() {
+//        toggleMenuDropdown.classList.toggle('active');
+//        navBar.classList.toggle('active');
+//        console.log("toggle= ", toggleMenuDropdown.classList);
+//        console.log("navBar= ", navBar.classList);
+//     }
+//  })
+
 // function cellSelect(cell) {
 //     if (cell == null) return;
 //     if(!cell.classList.contains("selected")) {
@@ -45,13 +61,6 @@ function remClass(e, c) {
 //         cell.classList.remove("selected");
 //     }
 // }
-
-// closeModalList.forEach(btn => {
-//     btn.addEventListener("click", () => {
-//         //console.log(`${btn.parentElement}`);
-//         closeModal(document.querySelector(`#${btn.parentElement.parentElement.id}`));
-//     })
-// })
 
 // function closeModal(modal) {
 //     modal.parentElement.classList.remove("active");
@@ -64,8 +73,9 @@ function remClass(e, c) {
 //     // console.log(`${modal} activated`);
 // }
 
-// handle pod press
 
+
+// handle pod press
 // fill your classname and embedded soundcloud here
 var mapPodToContent = {
     'Pod first': (

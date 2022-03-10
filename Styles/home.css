@@ -611,6 +611,11 @@ OUR PJ  */
     line-height: 32px;
 }
 
+.OurPJ.Section img {
+    display: inline-block;
+    height: 400px;
+    border-radius: 16px;
+}
 
 
 .a100PagesDescription {
@@ -1016,7 +1021,12 @@ PODCAST */
 
 
 
-
+@media screen and (max-width: 1320px) {
+    .OurPJ.Section img {
+        display: block;
+        margin: auto;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .invisible-M {
@@ -1095,6 +1105,10 @@ PODCAST */
 
     .invisible-S {
         display: none !important;
+    }
+
+    .OurPJ.Section img {
+        height: 280px;
     }
 }
 
