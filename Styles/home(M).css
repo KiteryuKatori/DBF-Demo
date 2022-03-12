@@ -1,3 +1,28 @@
+@media screen and (max-width: 780px) {
+    #Podcast .music-player {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    #Podcast .PodcastList-Container {
+        flex: unset;
+        max-height: 13rem;
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+
+    .invisible-S {
+        display: none !important;
+    }
+
+    .OurPJ.Section img {
+        height: 280px;
+    }
+}
+
 @media screen and (max-width: 690px) {
 
     :root {
@@ -241,6 +266,7 @@
     /* AbtUs SECTION BUT THIS IS ABOUT CORETEAM
     AbtUs SECTION BUT THIS IS ABOUT CORETEAM
     AbtUs SECTION BUT THIS IS ABOUT CORETEAM*/
+    
     #CoreTeam {
         position: relative;
         /* background-color: rgb(110, 159, 252); */
@@ -255,10 +281,7 @@
     }
 
     #CoreTeam.active {
-        /*height: 1200px;*/
-        /* activated */
-
-        padding-bottom: 1rem;
+        padding-bottom: 1080px;
     }
 
     #CoreTeam #dropdownIconContainer {
@@ -290,40 +313,24 @@
 
     #CoreTeam .coreTeamList {
         padding: 0px;
-        display: flex;
         height: 1120px;
-        /* height: 200px;
-        margin-bottom: 800px; */
         background-color: var(--memList-color);
+        gap: 16px;
+        grid-template-rows: 300px 300px;
     }
 
-    #CoreTeam .coreTeamList .first-row,
-    #CoreTeam .coreTeamList .second-row {
-        height: 540px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 0;
-    }
-
-    #CoreTeam .coreTeamList .first-row {
-        /* background-color: rgb(47, 153, 118); */
+    .coreTeamList.active {
+        max-height: 1200px;
+        padding-bottom: 5rem;
+        overflow: auto;
     }
 
     #CoreTeam .coreTeamList .smolCell {
-        display: block;
-        width: 40vw;
-        height: 240px;
         margin-top: 24px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* background-color: rgb(111, 252, 98); */
     }
-
-    /* #CoreTeam .coreTeamList .first-row .smolCell {
-        background-color: aquamarine;
-    } */
 
     #CoreTeam .coreTeamList .smolCell .cellHeader {
         height: 75%;
@@ -538,22 +545,28 @@
         margin-bottom: 0;
     }
 
-    #OurPJ .largeCell-Container {
-        
-    }
-
-    .PodC.Section .Slogan-Container {
-
+    #CoreTeam {
+        margin-left: -4px;
+        padding: 12px;
     }
 
     #CoreTeam .coreTeamList .smolCell .cellHeader img {
         height: 12rem;
-        width: auto !important;
     }
 
+    #CoreTeam .coreTeamList {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 300px);
+    }
 }
 
 @media screen and (max-width: 465px) {
+    /* #CoreTeam .coreTeamList .smolCell.sixth .cellHeader img {
+        height: 300px;
+        top: -200px !important;
+        width: 220px;
+        padding-bottom: 100px;
+    } */
 
     .AbtUs.Container {
         height: 5rem;

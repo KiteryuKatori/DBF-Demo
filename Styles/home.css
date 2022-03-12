@@ -440,7 +440,7 @@ Coreteam */
 }
 
 #CoreTeam.active {
-    height: 960px;
+    padding-bottom: 600px;
     /* activated */
 }
 
@@ -512,9 +512,11 @@ Coreteam */
 
 #CoreTeam .coreTeamList {
     position: relative;
-    padding: 12px;
-    padding-top: 48px;
     display: none;
+    padding: 48px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 400px;
+    gap: 48px;
     transition: ease-in-out var(--extra-long-transition);
     background-color: var(--memList-color);
 }
@@ -523,20 +525,10 @@ Coreteam */
     display: grid;
 }
 
-#CoreTeam .coreTeamList .first-row,
-#CoreTeam .coreTeamList .second-row {
-    /* background-color: rgb(255, 203, 136); */
-    /* display: none; */
-    height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-#CoreTeam .coreTeamList .smolCell {
-    flex-basis: 280px; 
-    height: 360px;
-    background-color: #c48050;
+#CoreTeam .coreTeamList .smolCell { 
+    height: 100%;
+    /* background-color: #c48050; */
+    background-color: rgb(245, 190, 139);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
@@ -560,6 +552,7 @@ Coreteam */
 #CoreTeam .coreTeamList .smolCell .cellContent {
     text-align: center;
     color: var(--color4);
+    padding-top: 12px;
 }
 
 #CoreTeam .coreTeamList .smolCell .quoteModal {
@@ -892,43 +885,6 @@ PODCAST */
     }
 }
 
-@media screen and (max-width: 1160px) {
-    #OurPJ .largeCell {
-        
-    }
-
-    #OurPJ.Section .Slogan-Container {
-        width: auto;
-        height: auto;
-    }
-
-    .a100PagesDescription {
-        margin-top: 0;
-    }
-
-    #Podcast {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #Podcast .Slogan-Container {
-        flex-basis: 100%;
-        height: unset;
-    }
-
-    #Podcast .music-player {
-        flex: 1;
-    }
-
-    #Podcast .PodcastList-Container {
-        max-height: 25rem;
-        overflow-y: scroll;
-        justify-content: unset;
-    }
-}
-
-
-
 #Donor.Donor {
     /* background-color: rgb(186, 186, 233); */
     text-align: center;
@@ -964,10 +920,6 @@ PODCAST */
     margin: 6px 16px;
     min-width: 180px;
 }
-
-
-
-
 
 #footer {
     position: relative;
@@ -1016,12 +968,108 @@ PODCAST */
     color: #ee945f;
 }
 
+@media screen and (max-width: 1600px) {
+    #CoreTeam.active {
+        padding-bottom: 1000px;
+        /* activated */
+    }
 
+    #CoreTeam .coreTeamList {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 400px 400px;
+        padding: 48px 86px;
+    }
+}
+
+@media screen and (max-width: 1442px) and (min-width: 420px) {
+    #header .imgContainer {
+        height: var(--navBar-Height);
+    }
+
+    #header .imgContainer img {
+        display: none;
+    }
+
+    #MDonateBtn {
+        display: inline;
+    }
+
+    .page-100 {
+        display: none;
+    }
+
+    .top-left-side-icons .donate-btn {
+        display: none;
+    }
+
+    .regular-donate.donate-btn {
+        display: none;
+    }
+
+    .top-left-side-icons .alternative-icon {
+        display: block;
+    }
+
+    .alternative-icon .imgContainer {
+        justify-content: flex-start !important;
+    }
+
+    .top-left-side-icons .alternative-icon .imgContainer img {
+        display: block !important;
+        margin-left: 6rem;
+    }
+
+    .main .largeCell {
+        width: 320px;
+    }
+
+    .main.Section .Slogan-Container {
+        padding-top: 1rem;
+        padding-left: 0;
+    }
+}
 
 @media screen and (max-width: 1320px) {
     .OurPJ.Section img {
         display: block;
         margin: auto;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    #OURPJ
+
+    #OurPJ .largeCell {
+        
+    }
+
+    #OurPJ.Section .Slogan-Container {
+        width: auto;
+        height: auto;
+    }
+
+    .a100PagesDescription {
+        margin-top: 0;
+    }
+
+    #Podcast {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #Podcast .Slogan-Container {
+        flex-basis: 100%;
+        height: unset;
+    }
+
+    #Podcast .music-player {
+        flex: 1;
+    }
+
+    #Podcast .PodcastList-Container {
+        max-height: 25rem;
+        overflow-y: scroll;
+        justify-content: unset;
     }
 }
 
@@ -1035,6 +1083,16 @@ PODCAST */
 @media screen and (max-width: 900px) {
     #CoreTeam {
         margin-top: 0rem
+    }
+
+    #CoreTeam.active {
+        padding-bottom: 1500px;
+        /* activated */
+    }
+
+    #CoreTeam .coreTeamList {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px 400px 400px;
     }
 }
 
@@ -1052,23 +1110,10 @@ PODCAST */
         font-size: 30px;
     }
 
-    .first-row, .second-row {
-        display: flex;
-        height: unset !important;
-    }
-
-    .smolCell {
-        min-width: unset !important;
-        height: unset !important;
-        flex-basis: 20%;
-    }
-
     .smolCell .cellHeader {
-        position: unset !important;
-        height: unset !important;
+        position: absolute;
         display: flex;
         justify-content: center;
-        margin-top: 1rem;
     }
 
     .smolCell .cellHeader img {
@@ -1077,52 +1122,7 @@ PODCAST */
     }
 
     .smolCell .cellContent {
-        margin-top: 2rem;
-        margin-bottom: 3rem;
-
+        margin-top: 8px;
     }
 }
 
-@media screen and (max-width: 780px) {
-    #Podcast .music-player {
-        padding-top: 1rem;
-        padding-bottom: 2rem;
-    }
-
-    #Podcast .PodcastList-Container {
-        flex: unset;
-        max-height: 13rem;
-        height: 200px;
-    }
-
-}
-
-
-@media screen and (max-width: 690px) {
-
-    .invisible-S {
-        display: none !important;
-    }
-
-    .OurPJ.Section img {
-        height: 280px;
-    }
-}
-
-
-@media screen and (max-width: 680px) {
-
-    .smolCell {
-        flex-basis: 40%;
-    }
-
-    #CoreTeam .coreTeamList {
-        height: unset !important;
-    }
-
-    .coreTeamList.active {
-        max-height: 1200px !important;
-        padding-bottom: 5rem !important;
-        overflow: auto;
-    }
-}
