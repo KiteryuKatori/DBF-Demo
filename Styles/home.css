@@ -433,11 +433,8 @@ Coreteam */
 
 #CoreTeam {
     position: relative;
-    /* background-color: rgb(110, 159, 252); */
-    /* rgb(253, 226, 207) */
     height: 50px;
     width: 100vw;
-    /* height: 800px; activated */
     margin: -100px 0 0 -36px;
     transition: ease-in-out var(--extra-long-transition);
 }
@@ -523,7 +520,7 @@ Coreteam */
 }
 
 #CoreTeam .coreTeamList.active {
-    display: block;
+    display: grid;
 }
 
 #CoreTeam .coreTeamList .first-row,
@@ -1128,6 +1125,4 @@ PODCAST */
         padding-bottom: 5rem !important;
         overflow: auto;
     }
-
 }
-
