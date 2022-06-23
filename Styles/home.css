@@ -292,7 +292,7 @@ MAIN BODY SECTION */
 
 .main.Section .largeCell .cellHeader iframe {
     min-height: 320px;
-    width: 305px;
+    width: 100%;
     border-radius: 32px 32px 0px 0px;
 }
 
@@ -357,10 +357,6 @@ MAIN BODY SECTION */
 ABOUT US
 ABOUT US */
 
-.AbtUs.Section {
-
-}
-
 .AbtUs .Container {
     position: relative;
     display: inline-block;
@@ -368,7 +364,6 @@ ABOUT US */
     height: 100%;
     /* background-color: rgb(112, 230, 101); */
     cursor: pointer;
-
 }
 
 .AbtUs .Container .imgContainer {
@@ -391,7 +386,7 @@ ABOUT US */
     height: 107.5%;
     top: 50%;
     opacity: 0;
-    padding: 16px 32px;
+    padding: 0;
     border-radius: 16px;
     background: linear-gradient(
             to bottom,
@@ -403,7 +398,7 @@ ABOUT US */
 }
 
 .AbtUs .Container:hover .TextContainer {
-    top: 0%;
+    top: 10%;
     opacity: 1;
 }
 
@@ -560,19 +555,11 @@ Coreteam */
     position: absolute;
 }
 
-#CoreTeam .coreTeamList .smolCell .quoteModal p.quote {
-
-}
-
 /* OUR PJ
 OUR PJ
 OUR PJ
 OUR PJ
 OUR PJ  */
-
-.OurPJ.Section {
-    /* background-color: aliceblue; */
-}
 
 .OurPJ.Section .Slogan-Container {
     width: 45vw;
@@ -736,10 +723,6 @@ PODCAST */
     flex: 2;
 }
 
-.PodC.Section .PodcastList-Container .Pod .in4Container h3 {
-
-}
-
 .music-player {
     margin-top: 80px;
     padding: 4rem 2rem 0 2rem;
@@ -749,8 +732,6 @@ PODCAST */
     /* background-color: blue; */
 }
 
-.music-player > * {
-}
 
 .music-player .have-some-music-case {
     display: none;
@@ -790,11 +771,6 @@ PODCAST */
     position: absolute;
 }
 
-.coreTeamList {
-    /*display: flex !important;*/
-    /*flex-wrap: wrap;*/
-    /*flex-basis: 25%;*/
-}
 
 .Section {
     display: block;
@@ -821,6 +797,11 @@ PODCAST */
     white-space: nowrap;
 }
 
+.summary-wrapper .LSlogan.when-tablet {
+    margin: 0;
+    text-align: center;
+}
+
 @media screen and (max-width: 690px){
     .summary-wrapper .LSlogan {
         margin-left: 0;
@@ -828,13 +809,11 @@ PODCAST */
     }
 }
 
-.TextContainer {
-    height: auto;
-    padding: 0;
-}
-
-.AbtUs .Container:hover .TextContainer {
-    top: -10%;
+@media screen and (min-width: 1281px) {
+    .OurPJ.Section img {
+        height: 500px;
+        margin-bottom: 100px;
+    }
 }
 
 @media screen and (max-width: 1442px) and (min-width: 420px) {
@@ -882,6 +861,11 @@ PODCAST */
     .main.Section .Slogan-Container {
         padding-top: 1rem;
         padding-left: 0;
+    }
+
+    .OurPJ.Section img {
+        height: 600px;
+        margin-bottom: 160px;
     }
 }
 
@@ -1031,13 +1015,11 @@ PODCAST */
 
 @media screen and (max-width: 1320px) {
     .OurPJ.Section img {
-        display: block;
-        margin: auto;
     }
 }
 
 @media screen and (max-width: 1160px) {
-    #OURPJ
+    #OURPJ {}
 
     #OurPJ .largeCell {
         

@@ -19,7 +19,7 @@
     }
 
     .OurPJ.Section img {
-        height: 280px;
+        height: 240px;
     }
 }
 
@@ -467,7 +467,6 @@
     }
 
     .main.Section .largeCell .cellHeader > * {
-        /*width: 100%;*/
     }
 
 
