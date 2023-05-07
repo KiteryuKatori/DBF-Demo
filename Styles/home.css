@@ -398,7 +398,7 @@ ABOUT US */
 }
 
 .AbtUs .Container:hover .TextContainer {
-    top: 10%;
+    top: 0;
     opacity: 1;
 }
 
@@ -789,34 +789,32 @@ PODCAST */
     margin-top: 0;
 }
 
-.summary-wrapper .LSlogan {
+.summary .LSlogan {
     color: var(--color4);
     font-size: 48px;
-    margin-left: 4rem;
-    margin-bottom: 1rem;
     white-space: nowrap;
 }
 
-.summary-wrapper .LSlogan.when-tablet {
+.summary .LSlogan.when-tablet {
     margin: 0;
     text-align: center;
 }
 
 @media screen and (max-width: 690px){
-    .summary-wrapper .LSlogan {
+    .summary .LSlogan {
         margin-left: 0;
         text-align: center;
     }
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1500px) {
     .OurPJ.Section img {
-        height: 500px;
+        height: 480px;
         margin-bottom: 100px;
     }
 }
 
-@media screen and (max-width: 1442px) and (min-width: 420px) {
+@media screen and (max-width: 1450px) and (min-width: 420px) {
     #header .imgContainer {
         height: var(--navBar-Height);
     }
@@ -860,12 +858,25 @@ PODCAST */
 
     .main.Section .Slogan-Container {
         padding-top: 1rem;
-        padding-left: 0;
     }
 
     .OurPJ.Section img {
         height: 600px;
         margin-bottom: 160px;
+    }
+
+    .OurPJ.Section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .OurPJ.Section .Slogan-Container,
+    .OurPJ.Section img {
+        margin: auto;
+    }
+
+    .summary {
+        margin-top: 100px;
     }
 }
 
@@ -1028,10 +1039,6 @@ PODCAST */
     #OurPJ.Section .Slogan-Container {
         width: auto;
         height: auto;
-    }
-
-    .a100PagesDescription {
-        margin-top: 0;
     }
 
     #Podcast {
